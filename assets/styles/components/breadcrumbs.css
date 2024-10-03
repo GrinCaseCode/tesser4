@@ -1,0 +1,19 @@
+.breadcrumbs {
+  padding-block: 15px;
+  font-size: 14px;
+}
+.breadcrumbs__separator {
+  content: "/";
+}
+.breadcrumbs a.breadcrumbs__item {
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 150ms ease-in-out;
+}
+.breadcrumbs a.breadcrumbs__item:hover, .breadcrumbs a.breadcrumbs__item:focus-visible {
+  text-decoration-color: currentColor;
+}
+.breadcrumbs span.breadcrumbs__item {
+  color: var(--color-accent);
+}

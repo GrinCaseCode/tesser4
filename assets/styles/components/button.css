@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  padding-block: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--color-accent);
+  transition: background-color 200ms ease-in-out;
+}
+.button:hover, .button:focus-visible {
+  background-color: color-mix(in srgb, var(--color-accent) 95%, black);
+}
+.button:active {
+  background-color: color-mix(in srgb, var(--color-accent) 90%, black);
+}

@@ -1,0 +1,9 @@
+.text-block {
+  --accent: var(--color-accent);
+  padding: 20px;
+  border-left: 5px solid var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 25%, white);
+}
+.text-block_gray {
+  --accent: #cacaca;
+}

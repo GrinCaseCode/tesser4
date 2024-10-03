@@ -1,0 +1,712 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TESSER</title>
+
+    <link rel="stylesheet" href="assets/styles/base/typography.css" />
+    <link rel="stylesheet" href="assets/styles/base/reset.css" />
+    <link rel="stylesheet" href="assets/styles/base/colors.css" />
+    <link rel="stylesheet" href="assets/styles/globals.css" />
+
+    <link rel="stylesheet" href="assets/styles/layouts/container.css" />
+    <link rel="stylesheet" href="assets/styles/layouts/header.css" />
+    <link rel="stylesheet" href="assets/styles/layouts/footer.css" />
+    <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css" />
+    <link rel="stylesheet" href="assets/styles/components/link.css" />
+    <link rel="stylesheet" href="assets/styles/components/text-block.css" />
+    <link rel="stylesheet" href="assets/styles/components/modal.css" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css" />
+    <link rel="stylesheet" href="assets/styles/components/button.css" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css" />
+    <link rel="stylesheet" href="assets/styles/components/pagination.css" />
+    <link rel="stylesheet" href="assets/styles/components/checkbox.css" />
+    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css" />
+
+
+    <link rel="stylesheet" href="assets/styles/about-company.css" />
+    <link rel="stylesheet" href="assets/styles/card.css" />
+
+    <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/components/fancybox.js"></script>
+    <script src="assets/scripts/lib/phoneinput.js"></script>
+    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js"></script>
+    <script src="assets/scripts/components/hamburger-menu.js"></script>
+    <script src="assets/scripts/components/header.js"></script>
+    <script src="assets/scripts/components/modal.js"></script>
+    <script src="assets/scripts/components/card.js"></script>
+    <script src="assets/scripts/components/slider-catalog.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top-navigation">
+          <a class="header-top-navigation__item header-top-navigation__item_active" href="">О компании</a>
+          <a class="header-top-navigation__item" href="">Доставка и оплата</a>
+          <a class="header-top-navigation__item" href="">Гарантия и возврат</a>
+          <div class="header-top-navigation-widgets">
+            <a class="header-top-navigation-widgets-item" href="">
+              <div class="header-top-navigation-widgets-item__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"
+                  />
+                </svg>
+              </div>
+              <div class="header-top-navigation-widgets-item__text">Избранное:</div>
+              <div class="header-top-navigation-widgets-item__badge">0</div>
+            </a>
+            <a class="header-top-navigation-widgets-item" href="">
+              <div class="header-top-navigation-widgets-item__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M15 21H9V3h6zm-4-2h2V5h-2zm-3 2H2V11h6zm-4-2h2v-6H4zm18 2h-6V8h6zm-4-2h2v-9h-2z"
+                  />
+                </svg>
+              </div>
+              <div class="header-top-navigation-widgets-item__text">Сравнение:</div>
+              <div class="header-top-navigation-widgets-item__badge">0</div>
+            </a>
+          </div>
+          <div class="header-top-navigation-auth">
+            <a class="header-top-navigation-auth__item" href="">Вход</a>
+            <a class="header-top-navigation-auth__item" href="">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container">
+          <a class="header__logotype" href="#">ТЕССЕР</a>
+          <div class="header-region">
+            <div class="header-region__title">Регион:</div>
+            <div class="header-region-select">
+              <button class="header-region-select-button" type="button">
+                <div class="header-region-select-button__text">Москва</div>
+                <svg class="header-region-select-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m6 9l6 6l6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-opening-hours">
+            <div class="header-opening-hours__title">Режим работы</div>
+            <div class="header-opening-hours__content">10:00 - 20:00 Сб - Вс: Выходной</div>
+          </div>
+          <div class="header-call">
+            <div class="header-call-title">
+              <svg class="header-call-title__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                />
+              </svg>
+              <div class="header-call-title__text">8 (800) 888-99-00</div>
+            </div>
+            <button class="header-call__link link" type="button" data-modal-id="call">заказать звонок</button>
+          </div>
+          <div class="header-cart">
+            <div class="header-cart__icon-wrapper">
+              <svg
+                class="header-cart__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+                />
+              </svg>
+            </div>
+            <div class="header-cart-body">
+              <div class="header-cart-body__title">Корзина</div>
+              <div class="header-cart-body__price">0 ₽</div>
+            </div>
+            <div class="header-cart__badge">0</div>
+            <div class="header-cart-popup">
+              <div class="header-cart-popup-item">
+                <img class="header-cart-popup-item__image" src="https://placehold.co/600x400/EEE/31343C" alt="" />
+                <a class="header-cart-popup-item__name" href="">Ламинат Kaindl Natural Touch Венге Аврора</a>
+                <div class="header-cart-popup-item__right">
+                  <div class="header-cart-popup-item__price">1 700 ₽</div>
+                  <div class="header-cart-popup-item__discount">2250 ₽</div>
+                  <div class="header-cart-popup-item__amount">x 1 шт</div>
+                </div>
+                <button class="header-cart-popup-item__remove-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="header-cart-popup-footer">
+                <div class="header-cart-popup-footer__row">
+                  <div class="header-cart-popup-footer__text">
+                    Товаров:
+                    <b>3</b>
+                  </div>
+                  <div class="header-cart-popup-footer__text">
+                    На сумму:
+                    <b>0 ₽</b>
+                  </div>
+                </div>
+                <a class="header-cart-popup-footer__button" href=""> Оформить заказ </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom-navigation">
+        <div class="container">
+          <button class="header-bottom-navigation-catalog-button" type="button">
+            <div class="header-bottom-navigation-catalog-button__icon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="header-bottom-navigation-catalog-button__text">Каталог товаров</div>
+          </button>
+          <a class="header-bottom-navigation__item" href="">Акции</a>
+          <a class="header-bottom-navigation__item" href="">Услуги</a>
+          <a class="header-bottom-navigation__item" href="">Магазины</a>
+          <form class="header-bottom-navigation__search header-search">
+            <input class="header-search__control" type="search" name="query" placeholder="Поиск по сайту..." required />
+            <button class="header-search-button" type="submit">
+              <svg class="header-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="header-catalog">
+            <ul class="header-catalog-sidebar">
+              <li>
+                <a class="header-catalog-sidebar__item" href="" data-catalog-content-id="1">Керамическая плитка</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="" data-catalog-content-id="2">Керамогранит</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Клинкер</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Мозайка</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Напольные покрытия</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Отопление</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Сантехника</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Сопутствующие товары</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Тёплые полы</a>
+              </li>
+            </ul>
+            <div class="header-catalog__body">
+              <div class="header-catalog-content" data-catalog-content-id="1">
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+              </div>
+              <div class="header-catalog-content" data-catalog-content-id="2">
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header-touch">
+      <button class="header-touch-hamburger-button" type="button">
+        <div class="header-touch-hamburger-button__icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
+      <a class="header-touch__logotype" href="">ТЕССЕР</a>
+      <div class="header-touch-widgets">
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M15 21H9V3h6zm-4-2h2V5h-2zm-3 2H2V11h6zm-4-2h2v-6H4zm18 2h-6V8h6zm-4-2h2v-9h-2z"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+      </div>
+      <div class="header-touch__hamburger-menu hamburger-menu">
+        <div class="hamburger-menu__backdrop"></div>
+        <div class="hamburger-menu__wrapper">
+          <div class="hamburger-menu-search__wrapper">
+            <form class="hamburger-menu-search">
+              <input
+                class="hamburger-menu-search__control"
+                type="search"
+                name="query"
+                placeholder="Поиск по сайту..."
+                required
+              />
+              <button class="hamburger-menu-search-button" type="submit">
+                <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <button class="hamburger-menu-catalog-button" type="button">
+            <div class="hamburger-menu-catalog-button__text">Каталог</div>
+            <svg class="hamburger-menu-catalog-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z" />
+            </svg>
+          </button>
+          <div class="hamburger-menu-auth">
+            <a class="hamburger-menu-auth__item" href="">Вход</a>
+            <span class="hamburger-menu-auth__separator">/</span>
+            <a class="hamburger-menu-auth__item" href="">Регистрация</a>
+          </div>
+          <div class="hamburger-menu-navigation">
+            <a class="hamburger-menu-navigation__item" href="">Магазины</a>
+            <a class="hamburger-menu-navigation__item" href="">О компании</a>
+            <a class="hamburger-menu-navigation__item" href="">Акции</a>
+            <a class="hamburger-menu-navigation__item" href="">Услуги</a>
+            <a class="hamburger-menu-navigation__item" href="">Доставка и оплата</a>
+            <a class="hamburger-menu-navigation__item" href="">Гарантия и возврат</a>
+          </div>
+          <div class="hamburger-menu-catalog-menu" data-catalog-menu-id="1">
+            <button class="hamburger-menu-catalog-menu__close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z" />
+              </svg>
+              Назад
+            </button>
+            <a class="hamburger-menu-catalog-menu__item" href="" data-catalog-menu-id="2">
+              Ламинат
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z" />
+              </svg>
+            </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Паркетная доска </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Ковролин и ковровая плитка </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Плитка ПВХ </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Линолеум </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Плинтус </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Подложка под паркет и ламинат </a>
+          </div>
+          <div class="hamburger-menu-catalog-menu" data-catalog-menu-id="2">
+            <button class="hamburger-menu-catalog-menu__close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z" />
+              </svg>
+              Назад
+            </button>
+            <div class="hamburger-menu-catalog-menu-column">
+              <div class="hamburger-menu-catalog-menu-column__title">Бренды</div>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">Kaindl</a>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">Kaindl</a>
+            </div>
+            <div class="hamburger-menu-catalog-menu-column">
+              <div class="hamburger-menu-catalog-menu-column__title">Класс</div>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">31 класс</a>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">31 класс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item" href="">Главная</a>
+      <span class="breadcrumbs__separator">/</span>
+      <a class="breadcrumbs__item" href="">Коллекции</a>
+      <span class="breadcrumbs__separator">/</span>
+      <a class="breadcrumbs__item" href="">Керамическая плитка</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__item">Agat</span>
+    </section>
+
+    <main class="main">
+      <section class="page-card">
+        <div class="container">
+          <div class="wrapper-card">
+            <div class="col-card">
+              <ul class="slider-card">
+                <li>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-card">
+                <h1 class="title-card">Super Panda</h1>
+                <div class="price-info">Товар снят с производства</div>
+                <div class="card-discontinued">
+                  <p>Позвоните нам <a href="tel:84954920359">8 (495) 492-03-59</a></p>
+                  <p>Или <a href="#">закажите обратный звонок</a> чтобы подобрать аналог</p>
+                </div>
+                <button class="button button_analog" data-modal-id="modal-project">Подобрать аналог</button>
+                <div class="card-advantages">
+                  <div class="card-advantages__item">
+                    <div class="card-advantages__icon">
+                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" fill="#C4C4C4">
+                            <path d="M2.19 7.44a1.46 1.46 0 1 1 2.527 1.464A1.46 1.46 0 0 1 2.19 7.44ZM7.49 2.13a1.45 1.45 0 1 1 1.434 2.52A1.45 1.45 0 0 1 7.49 2.13ZM12.58 7.26V14a3.39 3.39 0 0 0 3.39 3.39h5.8v-2.9H16a.49.49 0 0 1-.49-.49V7.23l-2.93.03Z"></path>
+                            <path d="M15 0h-1.45v2.9H15A12.1 12.1 0 1 1 2.9 15v-1.45H0V15A15 15 0 1 0 15 0Z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h30v30H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </div>
+                    <div class="card-advantages__content">Дизайн-проект <br><strong>бесплатно за 1 час.</strong></div>
+                  </div>
+                  <div class="card-advantages__item">
+                    <div class="card-advantages__icon">
+                      <svg viewBox="0 0 28 30" width="28" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" fill="#C4C4C4">
+                            <path d="M24.37 30H3.63A3.621 3.621 0 0 1 0 26.38V3.62A3.62 3.62 0 0 1 3.63 0h20.74A3.63 3.63 0 0 1 28 3.62v22.76A3.63 3.63 0 0 1 24.37 30ZM3.63 3.1a.52.52 0 0 0-.52.52v22.76a.52.52 0 0 0 .52.52h20.74a.52.52 0 0 0 .52-.52V3.62a.52.52 0 0 0-.52-.52H3.63Z"></path>
+                            <path d="M1.56 8.27h23.85v3.11H1.56V8.27ZM3.11 17.59h22.3v3.1H3.11v-3.1Z"></path>
+                            <path d="M8.3 10.86h3.11v7.24H8.3v-7.24ZM16.59 10.86h3.11v7.24h-3.11v-7.24ZM8.3 20.17h3.11v7.24H8.3v-7.24ZM16.59 20.17h3.11v7.24h-3.11v-7.24Z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h28v30H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </div>
+                    <div class="card-advantages__content">Точный <br><strong>расчет плитки</strong></div>
+                  </div><div class="card-advantages__item">
+                    <div class="card-advantages__icon">
+                      <svg viewBox="0 0 30 28" width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)">
+                            <path d="M5.32 28h19.36A5.52 5.52 0 0 0 30 22.3V5.7A5.52 5.52 0 0 0 24.68 0h-4.84v4.15h-9.68V0H5.32A5.52 5.52 0 0 0 0 5.7V22.3A5.52 5.52 0 0 0 5.32 28ZM22.74 7.26V3.11h1.94A2.51 2.51 0 0 1 27.1 5.7v11.51a5 5 0 0 0-2.42-.62h-1.94V7.26ZM2.9 5.7a2.51 2.51 0 0 1 2.42-2.59h1.94v13.48H5.32a5 5 0 0 0-2.42.62V5.7Zm2.42 14h4.84V7.26h9.68V19.7h4.84a2.6 2.6 0 0 1 0 5.19H5.32a2.6 2.6 0 0 1 0-5.19Z" fill="#C4C4C4"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h30v28H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </div>
+                    <div class="card-advantages__content"><strong>Чертежи</strong> <br>для укладки</div>
+                  </div>
+                  <div class="card-advantages__item">
+                    <div class="card-advantages__icon">
+                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)" fill="#C4C4C4">
+                            <path d="M15 0a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 27a12 12 0 1 0 0-24.001A12 12 0 0 0 15 27Z"></path>
+                            <path d="M20.25 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM9.75 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM12.64 18.52a3.33 3.33 0 0 0 4.71 0l.59-.58 2.12 2.12-.56.58a6.331 6.331 0 0 1-9 0l-.59-.58 2.13-2.12.6.58Z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#fff" d="M0 0h30v30H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </div>
+                    <div class="card-advantages__content">Ориентация <br>на <strong>ваш бюджет</strong></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-anchors">
+          <div class="container">
+            <ul>
+              <li><a href="#anchor1">Элементы коллекции</a></li>
+              <li><a href="#anchor3">Популярные коллекции</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <br>
+          <h2 class="title" id="anchor3">Популярные коллекции</h2>
+          <ul class="slider-catalog">
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog1.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog2.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog3.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Royal</strong></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog4.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Bona</strong></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog1.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog2.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <div class="footer-column__title">Информация о магазине</div>
+          <div class="footer-column__items">
+            <div class="footer-column__item">г. Санкт-Петербург, Петергофское шоссе, 96, лит.А</div>
+            <div class="footer-column__item">
+              <b>Звоните нам:</b>
+              <a href="tel:+7 800 999 77 00">+7 800 999 77 00</a>
+            </div>
+            <div class="footer-column__item">
+              <b>E-mail:</b>
+              <a href="mailto:floor@floor.ru">floor@floor.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column__title">О компании</div>
+          <div class="footer-column__items">
+            <a class="footer-column__item" href="">Магазины</a>
+            <a class="footer-column__item" href="">О компании</a>
+            <a class="footer-column__item" href="">Акции</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column__title">Покупателям</div>
+          <div class="footer-column__items">
+            <a class="footer-column__item" href="">Услуги</a>
+            <a class="footer-column__item" href="">Доставка и оплата</a>
+            <a class="footer-column__item" href="">Гарантия и возврат</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="container">
+        <a class="footer__logotype" href="">ТЕССЕР</a>
+        <div class="footer__copyright">
+          © 2024 ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита, сантехники.
+        </div>
+        <div class="footer-socials">
+          <a class="footer-socials-item" href="">
+            <svg class="footer-socials-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="#71aaeb"
+                d="M4.26 4.26C3 5.532 3 7.566 3 11.64v.72c0 4.068 0 6.102 1.26 7.38C5.532 21 7.566 21 11.64 21h.72c4.068 0 6.102 0 7.38-1.26C21 18.468 21 16.434 21 12.36v-.72c0-4.068 0-6.102-1.26-7.38C18.468 3 16.434 3 12.36 3h-.72C7.572 3 5.538 3 4.26 4.26m1.776 4.218H8.1c.066 3.432 1.578 4.884 2.778 5.184V8.478h1.938v2.958c1.182-.126 2.43-1.476 2.85-2.964h1.932a5.72 5.72 0 0 1-2.628 3.738a5.92 5.92 0 0 1 3.078 3.756h-2.13c-.456-1.422-1.596-2.526-3.102-2.676v2.676h-.24c-4.104 0-6.444-2.808-6.54-7.488"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" data-modal-id="call">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content__title">Заказать обратный звонок</div>
+        <div class="modal-content__body">
+          <form class="call-modal">
+            <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
+            <input class="call-modal__input" type="tel" placeholder="Телефон*" maxlength="18" required data-tel-input />
+            <button class="call-modal__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" data-modal-id="modal-project">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content__title">Заказать 3D проект</div>
+        <div class="modal-content__body">
+          <form class="call-modal">
+            <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
+            <input class="call-modal__input" type="tel" placeholder="Телефон*" maxlength="18" required data-tel-input />
+            <input class="call-modal__input" type="email" placeholder="Ваше email*" minlength="3" required />
+            <button class="call-modal__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

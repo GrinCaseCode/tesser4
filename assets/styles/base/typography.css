@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../../fonts/dehinted-GothamPro.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 17px;
+  font-weight: 500;
+}

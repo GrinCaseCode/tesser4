@@ -1,0 +1,19 @@
+* {
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+*::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) #fff;
+}
+
+body {
+  font-family: "Gotham Pro", sans-serif;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+}

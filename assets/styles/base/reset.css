@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+input {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+p {
+  margin-block: 0;
+}
+
+ul,
+ol {
+  margin-block: 0;
+  padding-left: 0;
+}
+
+ul > li,
+ol > li {
+  list-style-type: none;
+}
