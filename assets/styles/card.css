@@ -406,6 +406,9 @@
 .item-catalog_collection .item-catalog__title {
   margin-left: 0;
 }
+.page-card .title {
+  font-size: 19px;
+}
 }
 
 @media only screen and (max-width : 480px) {

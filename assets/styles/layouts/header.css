@@ -493,6 +493,7 @@
   background-color: var(--color-header-background);
 }
 .header-touch-hamburger-button {
+  width: 60px;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
