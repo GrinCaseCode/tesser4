@@ -461,7 +461,7 @@
                   <p>Позвоните нам <a href="tel:84954920359">8 (495) 492-03-59</a></p>
                   <p>Или <a href="#">закажите обратный звонок</a> чтобы подобрать аналог</p>
                 </div>
-                <button class="button button_analog" data-modal-id="modal-project">Подобрать аналог</button>
+                <button class="button button_analog" data-modal-id="modal-analog">Подобрать аналог</button>
                 <div class="card-advantages">
                   <div class="card-advantages__item">
                     <div class="card-advantages__icon">
@@ -708,5 +708,29 @@
         </button>
       </div>
     </div>
+
+    <div class="modal" data-modal-id="modal-analog">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content__title">Подобрать аналог</div>
+        <div class="modal-content__body">
+          <form class="call-modal">
+            <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
+            <input class="call-modal__input" type="tel" placeholder="Телефон*" maxlength="18" required data-tel-input />
+            <input class="call-modal__input" type="email" placeholder="Ваше email*" minlength="3" required />
+            <button class="call-modal__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
   </body>
 </html>
