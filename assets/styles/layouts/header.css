@@ -120,6 +120,29 @@
   width: 16px;
   height: 16px;
 }
+.header-region {
+  position: relative;
+}
+.header-region__dropdown {
+  width: 250px;
+  font-size: 12px;
+  border: 1px solid #CCC;
+  background: #e5e5e5;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+.header-region__dropdown li {
+  padding: 5px 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header-region__dropdown li:hover,
+.header-region__dropdown li.active {
+  background: #f3f3f3;
+}
 .header-opening-hours__title {
   font-size: 14px;
   font-weight: 700;

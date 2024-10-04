@@ -123,6 +123,20 @@
   padding: 5px;
   width: 100%;
 }
+.hamburger-menu-bottom {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.hamburger-menu-bottom .header-call {
+  align-items: flex-start;
+}
+.hamburger-menu-bottom .header-region__dropdown {
+  bottom: 100%;
+  top: auto;
+}
 
 @media (max-width: 767px) {
   .hamburger-menu {
