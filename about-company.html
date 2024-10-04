@@ -4,33 +4,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TESSER</title>
 
-    <link rel="stylesheet" href="assets/styles/base/typography.css" />
-    <link rel="stylesheet" href="assets/styles/base/reset.css" />
-    <link rel="stylesheet" href="assets/styles/base/colors.css" />
-    <link rel="stylesheet" href="assets/styles/globals.css" />
+    <link rel="stylesheet" href="assets/styles/base/typography.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/base/reset.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/base/colors.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/globals.css?ver=1.3" />
 
-    <link rel="stylesheet" href="assets/styles/layouts/container.css" />
-    <link rel="stylesheet" href="assets/styles/layouts/header.css" />
-    <link rel="stylesheet" href="assets/styles/layouts/footer.css" />
+    <link rel="stylesheet" href="assets/styles/layouts/container.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/layouts/header.css?ver=1.2" />
+    <link rel="stylesheet" href="assets/styles/layouts/footer.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.3" />
 
-    <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css" />
-    <link rel="stylesheet" href="assets/styles/components/link.css" />
-    <link rel="stylesheet" href="assets/styles/components/text-block.css" />
-    <link rel="stylesheet" href="assets/styles/components/modal.css" />
-    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css" />
-    <link rel="stylesheet" href="assets/styles/components/button.css" />
-    <link rel="stylesheet" href="assets/styles/components/product-card.css" />
-    <link rel="stylesheet" href="assets/styles/components/pagination.css" />
-    <link rel="stylesheet" href="assets/styles/components/checkbox.css" />
+    <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/text-block.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/components/category.css?ver=1.3" />
 
-    <link rel="stylesheet" href="assets/styles/about-company.css" />
 
-    <script src="assets/scripts/lib/phoneinput.js"></script>
-    <script src="assets/scripts/components/hamburger-menu.js"></script>
-    <script src="assets/scripts/components/header.js"></script>
-    <script src="assets/scripts/components/modal.js"></script>
+    <link rel="stylesheet" href="assets/styles/about-company.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/card.css?ver=1.3" />
+    <link rel="stylesheet" href="assets/styles/index.css?ver=1.3" />
+
+    <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.3"></script>
+    <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.3"></script>
+    <script src="assets/scripts/components/fancybox.js?ver=1.3"></script>
+    <script src="assets/scripts/lib/phoneinput.js?ver=1.3"></script>
+    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.3"></script>
+    <script src="assets/scripts/components/hamburger-menu.js?ver=1.3"></script>
+    <script src="assets/scripts/components/header.js?ver=1.3"></script>
+    <script src="assets/scripts/components/modal.js?ver=1.3"></script>
+    <script src="assets/scripts/components/index.js?ver=1.3"></script>
+    <script src="assets/scripts/components/slider-catalog.js?ver=1.3"></script>
   </head>
   <body>
+    
     <header class="header">
       <div class="container">
         <div class="header-top-navigation">
@@ -88,6 +104,14 @@
                   />
                 </svg>
               </button>
+            </div>
+            <div class="header-region__dropdown">
+              <ul>
+                <li class="active">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Екатеринбург</li>
+                <li>Казань</li>
+              </ul>
             </div>
           </div>
           <div class="header-opening-hours">
@@ -404,9 +428,55 @@
               <a class="hamburger-menu-catalog-menu-column__item" href="">31 класс</a>
             </div>
           </div>
+
+          <div class="hamburger-menu-bottom">
+            <div class="header-call">
+              <div class="header-call-title">
+                <svg class="header-call-title__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <div class="header-call-title__text">8 (800) 888-99-00</div>
+              </div>
+              <button class="header-call__link link" type="button" data-modal-id="call">заказать звонок</button>
+            </div>
+            <div class="header-opening-hours">
+              <div class="header-opening-hours__title">Режим работы</div>
+              <div class="header-opening-hours__content">10:00 - 20:00 Сб - Вс: Выходной</div>
+            </div>
+            <div class="header-region">
+              <div class="header-region__title">Регион:</div>
+              <div class="header-region-select">
+                <button class="header-region-select-button" type="button">
+                  <div class="header-region-select-button__text">Москва</div>
+                  <svg class="header-region-select-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m6 9l6 6l6-6"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="header-region__dropdown">
+                <ul>
+                  <li class="active">Москва</li>
+                  <li>Санкт-Петербург</li>
+                  <li>Екатеринбург</li>
+                  <li>Казань</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
