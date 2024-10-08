@@ -42,7 +42,7 @@
   font-size: 27px;
   font-weight: 600;
 }
-.card-line .button {
+.card-line button {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -167,14 +167,15 @@
   display: flex;
   align-items: center;
 }
-.card-tabs a {
+.card-tabs button {
   padding: 28px 0 24px;
   color: #000;
   display: block;
+  width: initial;
   position: relative;
   text-transform: uppercase;
 }
-.card-tabs a::after {
+.card-tabs button::after {
   content: '';
   bottom: 0;
   right: 0;
@@ -185,12 +186,12 @@
   position: absolute;
   display: block;
 }
-.card-tabs .active a::after,
-.card-tabs a:hover::after {
+.card-tabs .active button::after,
+.card-tabs button:hover::after {
   left: 0;
   width: 100%;
 }
-.card-tabs .active a {
+.card-tabs .active button {
   font-weight: 600;
 }
 .tab-container {
@@ -344,6 +345,10 @@
     z-index: 50;
     position: relative;
     text-transform: uppercase;
+}
+.card-tabs button {
+  width: 100%;
+  text-align: left;
 }
 .tabs-wrap .tabs {
     position: absolute;

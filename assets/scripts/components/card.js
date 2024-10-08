@@ -13,30 +13,41 @@ $(document).ready(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 	});
 
-
-  $('.card-tabs li a').click(function(event) {
-    event.preventDefault();
+  // Обработчик клика по вкладкам
+  $('.tabs button').click(function(e) {
+    e.preventDefault();
     var textTab = $(this).html();
-    $(this).parent().parent().find("li").removeClass('active');
-    $(this).parent().addClass('active');
-    $(".tab-pane").fadeOut(0);
-    var selectTab = $(this).attr("href");
-    $(selectTab).fadeIn(200);
-
     $(".btn-tab").html(textTab);
 		$(".btn-tab").removeClass("active");
-  });
+
+    // Удаляем класс "active" у всех вкладок
+    $('.tabs li').removeClass('active');
+    // Добавляем класс "active" к текущей вкладке
+    $(this).parent().addClass('active');
+
+    // Получаем значение data-tab
+    var tab = $(this).data('tab');
+
+    // Фильтруем элементы
+    if (tab === 'all') {
+        $('.col-catalog').fadeIn(200);
+    } else {
+        $('.col-catalog').fadeOut(0);
+        $('.col-catalog[data-product="' + tab + '"]').fadeIn(200);
+    }
+});
+
 
   jQuery('.tabs-wrap').each(function() {
 		var currentTab = $(this);
-		var initalTextTab = currentTab.find(".active a").html();
+		var initalTextTab = currentTab.find(".active button").html();
 		currentTab.find(".btn-tab").html(initalTextTab);
 }); 
 $('.btn-tab').click(function() {
 	$(this).toggleClass("active");
 	$(this).siblings(".tabs").slideToggle(200);
 
-  $('.card-tabs li a').click(function(event) {
+  $('.card-tabs li button').click(function(event) {
     event.preventDefault();
     $(".tabs").slideUp(200);
   });
