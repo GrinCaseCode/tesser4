@@ -2,7 +2,7 @@
 	display: none;
 }
 .slider-billbord__item {
-  height: 470px;
+  height: 530px;
   display: block;
 }
 .slider-billbord__item img {
@@ -120,7 +120,15 @@
 .slider-billbord .slick-slide {
   height: auto !important;
 }
-
+.slider-billbord {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@media (max-width: 1680px) {
+  .slider-billbord__item {
+    height: 470px;
+  }
+}
 @media (max-width: 1400px) {
   .slider-billbord__item {
     height: 400px;
