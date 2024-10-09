@@ -176,7 +176,7 @@
     height: 220px;
   }
   .slider-billbord__item img {
-    object-position: 20% 50%;
+    object-position: 15% 50%;
   }
   .tabs-main {
     gap: 30px;
@@ -193,5 +193,16 @@
   }
   .advantages-wrap {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider-billbord__item {
+    height: 188px;
+  }
+}
+@media (max-width: 360px) {
+  .slider-billbord__item {
+    height: 169px;
   }
 }
