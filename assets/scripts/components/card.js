@@ -20,15 +20,11 @@ $(document).ready(function() {
     $(".btn-tab").html(textTab);
 		$(".btn-tab").removeClass("active");
 
-    // Удаляем класс "active" у всех вкладок
     $('.tabs li').removeClass('active');
-    // Добавляем класс "active" к текущей вкладке
     $(this).parent().addClass('active');
 
-    // Получаем значение data-tab
     var tab = $(this).data('tab');
 
-    // Фильтруем элементы
     if (tab === 'all') {
         $('.col-catalog').fadeIn(200);
     } else {

@@ -119,9 +119,17 @@
 .header-region-select-button__icon {
   width: 16px;
   height: 16px;
+  flex: none;
 }
 .header-region {
+  min-height: 39px;
   position: relative;
+}
+.header-region-select {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  white-space: nowrap;
 }
 .header-region__dropdown {
   width: 250px;
@@ -625,5 +633,11 @@
   .header-touch__logotype {
     margin-left: 10px;
     font-size: 14px;
+  }
+  .header-region-select {
+    position: relative;
+  }
+  .header-region {
+    min-height: initial;
   }
 }
