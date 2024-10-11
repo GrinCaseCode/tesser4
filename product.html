@@ -26,11 +26,16 @@
     <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.7" />
     <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.7" />
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/components/quantity.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.7" />
     <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.7" />
     <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/components/category.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.7" />
 
 
-    <link rel="stylesheet" href="assets/styles/about-company.css?ver=1.7" />
+    <link rel="stylesheet" href="assets/styles/product.css?ver=1.7" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.7"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.7"></script>
@@ -40,9 +45,11 @@
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.7"></script>
     <script src="assets/scripts/components/header.js?ver=1.7"></script>
     <script src="assets/scripts/components/modal.js?ver=1.7"></script>
+    <script src="assets/scripts/components/product.js?ver=1.7"></script>
+    <script src="assets/scripts/components/quntity.js?ver=1.7"></script>
+    <script src="assets/scripts/components/slider-catalog.js?ver=1.7"></script>
   </head>
   <body>
-    
     <header class="header">
       <div class="container">
         <div class="header-top-navigation">
@@ -476,52 +483,276 @@
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">О компании</span>
+      <a class="breadcrumbs__item" href="">Керамическая плитка</a>
+      <span class="breadcrumbs__separator">/</span>
+      <a class="breadcrumbs__item" href="">Для ванной</a>
+      <span class="breadcrumbs__separator">/</span>
+      <a class="breadcrumbs__item" href="">Коллекция Agat (Laparet, Россия)</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__item">Agat Плитка настенная серый 60082 20х60</span>
     </section>
-    <h1 class="container">О компании</h1>
+
     <main class="main">
-      <section class="about-company container">
-        <p class="about-company__description">
-          ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита и сантехники с комплексным подходом
-          к обслуживанию. Мы предлагаем полный комплекс услуг от разработки дизайн-проекта и подбора отделочных решений
-          до поставки материалов. В салонах представлен широкий выбор керамогранита, керамической плитки, мозаики,
-          напольных покрытий, сантехники, мебели для ванных комнат и сопутствующих товаров.
-        </p>
-        <p class="about-company__text-block text-block">
-          Почему ТЕССЕР?
-          <br />
-          Бесплатная услуга «3D дизайн-проект за час» Точный расчет количества необходимых материалов «до одной плитки»
-        </p>
-        <div class="about-company-gallery">
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-        </div>
-        <div class="about-company-services">
-          <div class="about-company-services__title">На нашем сайте к вашим услугам:</div>
-          <div class="about-company-services__item">реальные и конкурентоспособные цены;</div>
-          <div class="about-company-services__item">широчайший ассортимент товаров;</div>
-          <div class="about-company-services__item">качественные описания и изображения товаров;</div>
-          <div class="about-company-services__item">поиск товаров в магазине;</div>
-          <div class="about-company-services__item">система обратной связи;</div>
-          <div class="about-company-services__item">
-            продажа только сертифицированных и имеющих легальное происхождение товаров;
+      <section class="page-product">
+          <div class="container">
+            <h1>Agat Плитка настенная серый 60082 20х60</h1>
+            <div class="row-product">
+              <div class="col-slider-product">
+                  <div class="slider-for">
+                    <div>
+                      <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
+                        <img src="assets/img/for1.jpg" alt="alt">
+                      </a>
+                    </div>
+                    <div>
+                      <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
+                        <img src="assets/img/for2.jpeg" alt="alt">
+                      </a>
+                    </div>
+                    <div>
+                      <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
+                        <img src="assets/img/for1.jpg" alt="alt">
+                      </a>
+                    </div>
+                    <div>
+                      <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
+                        <img src="assets/img/for2.jpeg" alt="alt">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="title-gallery">Варианты рисунков <div class="tooltip-main" data-tile-tooltip="Для того, чтобы поверхность была натуральной и разнообразной, у плитки существует несколько вариантов рисунка">i</div></div>
+                  <div class="slider-nav">
+                    <div>
+                      <div class="slider-nav__item">
+                        <img src="assets/img/for1.jpg" alt="alt">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slider-nav__item">
+                        <img src="assets/img/for2.jpeg" alt="alt">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slider-nav__item">
+                        <img src="assets/img/for1.jpg" alt="alt">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slider-nav__item">
+                        <img src="assets/img/for2.jpeg" alt="alt">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-info-product">
+                <div class="head-product">
+                  <div class="item-product-info">
+                    <div class="item-product-info__wrap">
+                      <div class="item-product-info__flag">
+                        <img src="assets/img/gm.png" alt="alt">
+                      </div>
+                    </div>
+                    <span>Германия</span>
+                  </div>
+                  <div class="item-product-info">
+                    <div class="item-product-info__wrap">
+                      <div class="item-product-info__logo">
+                        <img src="assets/img/logo_manufacture1.jpeg" alt="alt">
+                      </div>
+                    </div>
+                    <span>Kronotex</span>
+                  </div>
+                  <div class="item-product-info">
+                    <div class="item-product-info__wrap">
+                      <div class="item-product-info__icon">
+                        <img src="assets/img/layer.svg" alt="alt">
+                      </div>
+                    </div>
+                    <span>Коллекция Mammut</span>
+                  </div>
+                  <div class="product-key">ID: <strong>106841</strong></div>
+                </div>
+                <div class="row-product">
+                  <div class="col-half-product">
+                    <div class="content-product">
+                      <div class="title-price">Цена</div>
+                      <div class="price-main">1 290 ₽/м<sup>2</sup></div>
+                      <hr>
+                      <div class="title-price">Общая стоимость</div>
+                      <div class="price-main">154.80₽</div>
+                    </div>
+                  </div>
+                  <div class="col-half-product">
+                    <div class="content-product">
+                      <div class="product-availability">Склад в <a href="#">г.Подольск</a></div>
+                      <div class="product-actions">
+                        <div class="tab-container-quantity">
+                          <div class="tab-pane-quantity" data-quantity="quantity-1">
+                            <div class="quantity quantity_main">
+                              <div class="quantity-button quantity-down"><i class="fas fa-chevron-down"></i></div>
+                              <input type="number" min="1" value="1">
+                              <div class="quantity-button quantity-up"><i class="fas fa-chevron-up"></i></div>
+                            </div>
+                          </div>
+                          <div class="tab-pane-quantity" data-quantity="quantity-2">
+                            <div class="quantity quantity_square">
+                              <div class="quantity-button quantity-down"><i class="far fa-chevron-down"></i></div>
+                              <input type="number" min="0.12" value="0.12">
+                              <div class="quantity-button quantity-up"><i class="far fa-chevron-up"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-quantity">
+                          <div class="btn-tab-quantity active" data-tab-quantity="quantity-1"><span>шт</span></div>
+                          <div class="btn-tab-quantity" data-tab-quantity="quantity-2"><span>m<sup>2</sup></span></div>
+                        </div>
+                      </div>
+                      <div class="product-buttons">
+                        <button class="button">Купить</button>
+                        <a href="#" class="link-product"><i class="fa fa-shopping-cart"></i><span>Купить в 1 клик</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-product">
+              <div class="col-half-product">
+                <ul class="tabs-product">
+                  <li class="active"><a href="#tab_about1">Характеристики</a></li>
+                  <li><a href="#tab_about2">Отзывы</a></li>
+                </ul>
+                <div class="tab-container-product">
+                  <div class="tab-pane-product" id="tab_about1">
+                    <div class="feature">
+                      <span>Область применения</span>
+                      <span>Для ванной</span>
+                    </div>
+                    <div class="feature">
+                      <span>Категория</span>
+                      <span>Плитка</span>
+                    </div>
+                    <div class="feature">
+                      <span>Цвет</span>
+                      <span>Серый</span>
+                    </div>
+                    <div class="feature">
+                      <span>Производитель	</span>
+                      <span>Laparet</span>
+                    </div>
+                    <div class="feature">
+                      <span>Страна производства	</span>
+                      <span>Россия</span>
+                    </div>
+                    <div class="feature">
+                      <span>Дизайн</span>
+                      <span>Оникс</span>
+                    </div>
+                    <div class="feature">
+                      <span>Ширина</span>
+                      <span>60,00 см</span>
+                    </div>
+                    <div class="feature">
+                      <span>Высота</span>
+                      <span>20,00 см</span>
+                    </div>
+                    <div class="feature">
+                      <span>Поверхность</span>
+                      <span>Глянцевая</span>
+                    </div>
+                    <div class="feature">
+                      <span>Покрытие</span>
+                      <span>Глазурованная</span>
+                    </div>
+                    <div class="feature">
+                      <span>Ректифицированная</span>
+                      <span>Нет</span>
+                    </div>
+                    <div class="feature">
+                      <span>Материал</span>
+                      <span>Керамика</span>
+                    </div>
+                    <div class="feature">
+                      <span>Место в коллекции	</span>
+                      <span>Базовая плита</span>
+                    </div>
+                    <div class="feature">
+                      <span>Назначение</span>
+                      <span>Стена</span>
+                    </div>
+                    <div class="feature">
+                      <span>Артикул</span>
+                      <span>60082</span>
+                    </div>
+                    <div class="feature">
+                      <span>Базовая единица	</span>
+                      <span>м<sup>2</sup></span>
+                    </div>
+                    <div class="feature">
+                      <span>Коллекция</span>
+                      <span>Agat</span>
+                    </div>
+                    <div class="feature">
+                      <span>Коэффициент пересчета в метры	</span>
+                      <span>0.12</span>
+                    </div>
+                    <div class="feature">
+                      <span>Толщина</span>
+                      <span>0.9 см</span>
+                    </div>
+                    <div class="feature">
+                      <span>Бренд</span>
+                      <span>Laparet</span>
+                    </div>
+                    <div class="feature">
+                      <span>Вес</span>
+                      <span>14.74 кг</span>
+                    </div>
+                  </div>
+                  <div class="tab-pane-product" id="tab_about2">
+                    <a href="#" class="button">Добавить отзыв</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-half-product">
+                <a href="#" class="link-about-product">
+                  <img src="assets/img/ic_about_product.svg" alt="alt">
+                  <span class="link-about-product__text">
+                    <span><strong>Как сэкономить</strong> с помощью услуги <strong>«3D дизайн-проект»</strong>?</span>
+                  </span>
+                </a>
+                <div class="head-product-about">
+                  <div class="head-product-about__title">Коллекция Agat</div>
+                  <a href="#" class="button">Посмотреть всю коллекцию</a>
+                </div>
+                <div class="image-product-collection">
+                  <img src="assets/img/product_collection1.jpeg" alt="alt">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about-company-services__item">покупка товара, не выходя из дома или офиса;</div>
-          <div class="about-company-services__item">
-            быстрое согласование товара с клиентом для подтверждения заказа;
-          </div>
-          <div class="about-company-services__item">обмен товаров ненадлежащего качества и многое другое.</div>
+      </section>
+      <section class="design-project">
+        <div class="container">
+          <h2 class="design-project__title">Подобрать отделочные материалы и сантехнику стало еще удобнее</h2>
+          <div class="design-project__descr">Подобрать отделочные материалы и сантехнику стало еще удобнее</div>
+          <a href="#" class="button">ЗАКАЗАТЬ ДИЗАЙН-ПРОЕКТ</a>
         </div>
-        <h2 class="about-company__subtitle">Мы рады приветствовать вас на сайте нашей компании!</h2>
-        <p class="about-company__text-block text-block text-block_gray">
-          Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания,
-          касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
-          <a href="mailto:info@tesser.ru">info@tesser.ru</a>
-        </p>
+      </section>
+      <section class="callback-product">
+        <div class="container">
+          <div class="callback">
+            <h2 class="callback__title">Позвоните нам - мы создадим Дизайн-проект для Вас <strong>В ПОДАРОК!</strong></h2>
+            <a href="tel:+78009997700" class="callback__phone">
+              <i class="fa fa-phone-alt"></i>
+              <b>+7 800 999 77 00</b>
+            </a>
+            <a href="#" class="button">Оставить заявку</a>
+          </div>
+        </div>
       </section>
     </main>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer-column">
@@ -581,6 +812,29 @@
           <form class="call-modal">
             <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
             <input class="call-modal__input" type="tel" placeholder="Телефон*" maxlength="18" required data-tel-input />
+            <button class="call-modal__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" data-modal-id="modal-project">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content__title">Заказать 3D проект</div>
+        <div class="modal-content__body">
+          <form class="call-modal">
+            <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
+            <input class="call-modal__input" type="tel" placeholder="Телефон*" maxlength="18" required data-tel-input />
+            <input class="call-modal__input" type="email" placeholder="Ваше email*" minlength="3" required />
             <button class="call-modal__button" type="submit">Отправить</button>
           </form>
         </div>
