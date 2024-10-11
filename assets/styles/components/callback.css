@@ -37,3 +37,18 @@
         max-width: 423px;
     }
 }
+@media (max-width: 768px) {
+    .callback {
+        gap: 20px;
+      }
+      .callback .button {
+        margin: 0;
+      }
+      .callback__title {
+        font-size: 20px;
+        max-width: 384px;
+      }
+      .callback__phone {
+        font-size: 18px;
+      }
+}
