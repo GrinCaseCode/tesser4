@@ -40,6 +40,8 @@
 @media (max-width: 768px) {
     .callback {
         gap: 20px;
+        text-align: center;
+        justify-content: center;
       }
       .callback .button {
         margin: 0;
