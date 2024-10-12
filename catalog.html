@@ -24,16 +24,14 @@
     <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.8" />
     <link rel="stylesheet" href="assets/styles/components/text-block.css?ver=1.8" />
     <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.8" />
-    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.8" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.8" /> 
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.8" />
-    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.8" />
     <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.8" />
     <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.8" />
-    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css?ver=1.8" />
-    <link rel="stylesheet" href="assets/styles/components/category.css?ver=1.8" />
+    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.8" />
 
 
-    <link rel="stylesheet" href="assets/styles/card.css?ver=1.8" />
+    <link rel="stylesheet" href="assets/styles/catalog.css?ver=1.8" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.8"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.8"></script>
@@ -43,8 +41,7 @@
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.8"></script>
     <script src="assets/scripts/components/header.js?ver=1.8"></script>
     <script src="assets/scripts/components/modal.js?ver=1.8"></script>
-    <script src="assets/scripts/components/card.js?ver=1.8"></script>
-    <script src="assets/scripts/components/slider-catalog.js?ver=1.8"></script>
+    <script src="assets/scripts/components/quntity.js?ver=1.8"></script>
   </head>
   <body>
     <header class="header">
@@ -480,493 +477,81 @@
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Коллекции</a>
-      <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Керамическая плитка</a>
-      <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">Agat</span>
+      <span class="breadcrumbs__item">Каталог</span>
     </section>
 
     <main class="main">
-      <section class="page-card">
-        <div class="container">
-          <div class="wrapper-card">
-            <div class="col-card">
-              <ul class="slider-card">
-                <li>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </li>
-                <li>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </li>
-                <li>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-card">
-                <h1 class="title-card">Agat</h1>
-                <div class="card-format">
-                  <p>Основной формат: 20x6040,20x40,20</p>
-                </div>
-                <div class="card-line">
-                  <div class="price-wrap">
-                    <span>от </span>
-                    <span class="price-main">1 290 ₽</span>
-                  </div>
-                  <button class="button" data-modal-id="modal-project">Заказать бесплатный 3D дизайн-проект</button>
-                </div>
-                <div class="card-advantages">
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M2.19 7.44a1.46 1.46 0 1 1 2.527 1.464A1.46 1.46 0 0 1 2.19 7.44ZM7.49 2.13a1.45 1.45 0 1 1 1.434 2.52A1.45 1.45 0 0 1 7.49 2.13ZM12.58 7.26V14a3.39 3.39 0 0 0 3.39 3.39h5.8v-2.9H16a.49.49 0 0 1-.49-.49V7.23l-2.93.03Z"></path>
-                            <path d="M15 0h-1.45v2.9H15A12.1 12.1 0 1 1 2.9 15v-1.45H0V15A15 15 0 1 0 15 0Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Дизайн-проект <br><strong>бесплатно за 1 час.</strong></div>
-                  </div>
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 28 30" width="28" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M24.37 30H3.63A3.621 3.621 0 0 1 0 26.38V3.62A3.62 3.62 0 0 1 3.63 0h20.74A3.63 3.63 0 0 1 28 3.62v22.76A3.63 3.63 0 0 1 24.37 30ZM3.63 3.1a.52.52 0 0 0-.52.52v22.76a.52.52 0 0 0 .52.52h20.74a.52.52 0 0 0 .52-.52V3.62a.52.52 0 0 0-.52-.52H3.63Z"></path>
-                            <path d="M1.56 8.27h23.85v3.11H1.56V8.27ZM3.11 17.59h22.3v3.1H3.11v-3.1Z"></path>
-                            <path d="M8.3 10.86h3.11v7.24H8.3v-7.24ZM16.59 10.86h3.11v7.24h-3.11v-7.24ZM8.3 20.17h3.11v7.24H8.3v-7.24ZM16.59 20.17h3.11v7.24h-3.11v-7.24Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h28v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Точный <br><strong>расчет плитки</strong></div>
-                  </div><div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 28" width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)">
-                            <path d="M5.32 28h19.36A5.52 5.52 0 0 0 30 22.3V5.7A5.52 5.52 0 0 0 24.68 0h-4.84v4.15h-9.68V0H5.32A5.52 5.52 0 0 0 0 5.7V22.3A5.52 5.52 0 0 0 5.32 28ZM22.74 7.26V3.11h1.94A2.51 2.51 0 0 1 27.1 5.7v11.51a5 5 0 0 0-2.42-.62h-1.94V7.26ZM2.9 5.7a2.51 2.51 0 0 1 2.42-2.59h1.94v13.48H5.32a5 5 0 0 0-2.42.62V5.7Zm2.42 14h4.84V7.26h9.68V19.7h4.84a2.6 2.6 0 0 1 0 5.19H5.32a2.6 2.6 0 0 1 0-5.19Z" fill="#C4C4C4"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v28H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content"><strong>Чертежи</strong> <br>для укладки</div>
-                  </div>
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M15 0a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 27a12 12 0 1 0 0-24.001A12 12 0 0 0 15 27Z"></path>
-                            <path d="M20.25 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM9.75 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM12.64 18.52a3.33 3.33 0 0 0 4.71 0l.59-.58 2.12 2.12-.56.58a6.331 6.331 0 0 1-9 0l-.59-.58 2.13-2.12.6.58Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Ориентация <br>на <strong>ваш бюджет</strong></div>
-                  </div>
-                </div>
-                <div class="card-subtitle">Посмотреть <strong>готовые 3D дизайн-проекты:</strong></div>
-                <div class="collection-projects">
-                  <a href="#" class="collection-projects__item collection-projects__item_tour">
-                    <img src="assets/img/collection_project1.jpg" alt="alt">
-                  </a>
-                  <a href="#" class="collection-projects__item">
-                    <img src="assets/img/collection_project1.jpg" alt="alt">
-                  </a>
-                  <a href="#" class="collection-projects__item">
-                    <img src="assets/img/collection_project1.jpg" alt="alt">
-                  </a>
-                  <a href="#" class="collection-projects__item">
-                    <img src="assets/img/collection_project1.jpg" alt="alt">
-                  </a>
-                </div>
-                <div class="card-button">
-                  <a href="#" class="button" data-modal-id="modal-project">Заказать бесплатный 3D дизайн-проект</a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-anchors">
+      <section class="page-categories">
           <div class="container">
-            <ul>
-              <li><a href="#anchor1">Элементы коллекции</a></li>
-              <li><a href="#anchor2">Описание коллекции</a></li>
-              <li><a href="#anchor3">Популярные коллекции</a></li>
+            <h1 class="title">Каталог товаров</h1>
+            <ul class="list-catalog">
+              <li>
+                <a href="#">Керамическая плитка <span>(3008)</span></a>
+                <ul>
+                  <li><a href="#">Для ванной <span>(2778)</span></a></li>
+                  <li><a href="#">Для кухни <span>(318)</span></a></li>
+                  <li><a href="#">Для пола <span>(112)</span></a></li>
+                  <li><a href="#">Строительная плитка <span>(5)</span></a></li>
+                  <li><a href="#">Для фасада <span>(11)</span></a></li>
+                </ul>
+                <a href="#">Керамогранит <span>(1709)</span></a>
+                <a href="#">Клинкер <span>(12)</span></a>
+                <a href="#">Мозаика <span>(202)</span></a>
+                <a href="#">Дизайн-проекты <span>(800+)</span></a>
+                <a href="#">Готовые решения для ванной <span>(550+)</span></a>
+              </li>
+              <li>
+                <a href="#">Напольные покрытия <span>(93)</span></a>
+                <ul>
+                  <li><a href="#">Ламинат <span>(58)</span></a></li>
+                  <li><a href="#">Паркетная доска <span>(4)</span></a></li>
+                  <li><a href="#">Виниловые покрытия <span>(23)</span></a></li>
+                  <li><a href="#">Аксессуары <span>(8)</span></a></li>
+                  <li><a href="#">Напольные виниловые покрытия <span>(17)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Сантехника <span>(544)</span></a>
+                <ul>
+                  <li><a href="#">Ванны <span>(22)</span></a></li>
+                  <li><a href="#">Раковины <span>(66)</span></a></li>
+                  <li><a href="#">Смесители <span>(130)</span></a></li>
+                  <li><a href="#">Унитазы <span>(46)</span></a></li>
+                  <li><a href="#">Писсуары <span>(2)</span></a></li>
+                  <li><a href="#">Системы инсталляций <span>(11)</span></a></li>
+                  <li><a href="#">Душевая программа <span>(15)</span></a></li>
+                  <li><a href="#">Мебель для ванной комнаты <span>(129)</span></a></li>
+                  <li><a href="#">Полотенцесушители <span>(14)</span></a></li>
+                  <li><a href="#">Аксессуары для ванной и туалета <span>(14)</span></a></li>
+                  <li><a href="#">Водосливная арматура <span>(45)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="#">Комплектующие <span>(50)</span></a></li>
+                </ul>
+                <a href="#">Сопутствующие товары <span>(247)</span></a>
+                <ul>
+                  <li><a href="#">Профили <span>(56)</span></a></li>
+                  <li><a href="#">Ревизионные люки <span>(33)</span></a></li>
+                  <li><a href="#">Выравнивающие элементы <span>(10)</span></a></li>
+                  <li><a href="#">Теплые полы <span>(34)</span></a></li>
+                  <li><a href="#">Сухие строительные смеси <span>(114)</span></a></li>
+                </ul>
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="card-tabs">
-          <div class="container">
-            <div class="tabs-wrap">
-              <div class="btn-tab"></div>
-              <ul class="tabs">
-                <li class="active"><button data-tab="all">Все (8)</button></li>
-                <li><button data-tab="type-1">Базовая плита (2)</button></li>
-                <li><button data-tab="type-2">Декор (3)</button></li>
-                <li><button data-tab="type-3">Мозаика (2)</button></li>
-                <li><button data-tab="type-4">Бордюр (1)</button></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      </section>
+      <section class="callback-product">
         <div class="container">
-          <div class="tab-container" id="anchor1">
-            <div class="row-catalog">
-              <div class="col-catalog" data-product="type-2">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                    <div class="item-label item-label_hit">Хит</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog1.jpeg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog1.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-1">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                    <div class="item-label item-label_new">Новинка</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog2.jpg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog2.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-3">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog3.png" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog3.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-4">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog1.jpeg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog4.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-1">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog3.png" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog3.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-2">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog1.jpeg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog4.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-3">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                    <div class="item-label item-label_hit">Хит</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog1.jpeg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog1.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-catalog" data-product="type-2">
-                <div class="item-catalog">
-                  <div class="labels-wrap">
-                    <div class="item-label item-label_sale">-20%</div>
-                    <div class="item-label item-label_new">Новинка</div>
-                  </div>
-                  <div class="item-catalog__brand">
-                    <img src="assets/img/brand_catalog2.jpg" alt="alt">
-                  </div>
-                  <a href="#" class="item-catalog__image">
-                    <img src="assets/img/catalog2.jpg" alt="alt">
-                  </a>
-                  <div class="item-catalog__content">
-                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
-                    <div class="item-catalog__features">
-                      <p>Страна: <strong>Германия</strong></p>
-                      <p>Производитель: <strong>Kronotex</strong></p>
-                      <p>Класс: <strong>33</strong></p>
-                      <p>Толщина, мм: <strong>10</strong></p>
-                    </div>
-                    <div class="item-catalog__prices">
-                      <div class="price-main">936 ₽/шт</div>
-                      <div class="price-old">1 170 ₽/шт</div>
-                    </div>
-                  </div>
-                  <div class="item-catalog__info">
-                    <a href="#" class="button">Рассчитать стоимость</a>
-                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
-                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="callback">
+            <h2 class="callback__title">Позвоните нам - мы создадим Дизайн-проект для Вас <strong>В ПОДАРОК!</strong></h2>
+            <a href="tel:+78009997700" class="callback__phone">
+              <i class="fa fa-phone-alt"></i>
+              <b>+7 800 999 77 00</b>
+            </a>
+            <a href="#" class="button">Оставить заявку</a>
           </div>
-          <div class="card-description" id="anchor2">
-            <h2 class="title">Описание коллекции</h2>
-            <p><strong>Подходит вам, если вы любите контрастные интерьеры.</strong></p>
-            <p><source>Коллекция великолепно воспроизводит рисунок агата. <br> Поверхность: <strong>гладкая</strong></p>
-            <p>Структура поверхности: <strong>глянцевая</strong></p>
-            <p>Форматы: <strong>20х60; 40,2х40,2</strong></p>
-            <p>Тип рисунка: <strong>агат</strong></p>
-            <p>Область применения: <strong>для ванной, душа, туалета и кухни</strong></p>
-            <p>Как легко догадаться по названию, <strong>коллекция Agat</strong> воспроизводит рисунок агата. На керамической плитке изображены завораживающие своей красотой слои минерала с плавными переходами оттенков. Настенная плитка представлена в трёх утончённых цветах – кофейном, светлом и сером. Агат не требует броских украшений, поэтому декоры только добавляют необходимые акценты. Псевдомозаика представляет собой разнонаправленные слои минерала. Декор Lines с контрастными линиями добавит ритмичность и динамику в интерьер. Модуль Geo покрыт геометрическим орнаментом в шахматном стиле, но вместо чёрно-белых квадратов на плитке изображены ромбы с рисунком агата и полосатым узором.</p>
-          </div>
-          <h2 class="title" id="anchor3">Популярные коллекции</h2>
-          <ul class="slider-catalog">
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog1.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog2.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog3.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Royal</strong></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog4.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Bona</strong></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog1.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog2.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
