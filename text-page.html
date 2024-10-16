@@ -18,31 +18,36 @@
     <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.10" />
     <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.10" />
     <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/scripts/lib/ion.rangeSlider-master/css/ion.rangeSlider.min.css?ver=1.10" />
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.10" />
 
     <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/text-block.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.10" />
-    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.10" /> 
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.10" />
 
 
-    <link rel="stylesheet" href="assets/styles/about-company.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/products.css?ver=1.10" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.10"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.10"></script>
     <script src="assets/scripts/components/fancybox.js?ver=1.10"></script>
     <script src="assets/scripts/lib/phoneinput.js?ver=1.10"></script>
     <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.10"></script>
+    <script src="assets/scripts/lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.10"></script>
     <script src="assets/scripts/components/header.js?ver=1.10"></script>
     <script src="assets/scripts/components/modal.js?ver=1.10"></script>
+    <script src="assets/scripts/components/quntity.js?ver=1.10"></script>
+    <script src="assets/scripts/components/products.js?ver=1.10"></script>
   </head>
   <body>
-    
     <header class="header">
       <div class="container">
         <div class="header-top-navigation">
@@ -489,52 +494,178 @@
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">О компании</span>
+      <span class="breadcrumbs__item">Керамическая плитка</span>
     </section>
-    <h1 class="container">О компании</h1>
+
     <main class="main">
-      <section class="about-company container">
-        <p class="about-company__description">
-          ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита и сантехники с комплексным подходом
-          к обслуживанию. Мы предлагаем полный комплекс услуг от разработки дизайн-проекта и подбора отделочных решений
-          до поставки материалов. В салонах представлен широкий выбор керамогранита, керамической плитки, мозаики,
-          напольных покрытий, сантехники, мебели для ванных комнат и сопутствующих товаров.
-        </p>
-        <p class="about-company__text-block text-block">
-          Почему ТЕССЕР?
-          <br />
-          Бесплатная услуга «3D дизайн-проект за час» Точный расчет количества необходимых материалов «до одной плитки»
-        </p>
-        <div class="about-company-gallery">
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-          <img class="about-company-gallery__item" src="https://placehold.co/600x400/EEE/31343C" alt="" />
-        </div>
-        <div class="about-company-services">
-          <div class="about-company-services__title">На нашем сайте к вашим услугам:</div>
-          <div class="about-company-services__item">реальные и конкурентоспособные цены;</div>
-          <div class="about-company-services__item">широчайший ассортимент товаров;</div>
-          <div class="about-company-services__item">качественные описания и изображения товаров;</div>
-          <div class="about-company-services__item">поиск товаров в магазине;</div>
-          <div class="about-company-services__item">система обратной связи;</div>
-          <div class="about-company-services__item">
-            продажа только сертифицированных и имеющих легальное происхождение товаров;
-          </div>
-          <div class="about-company-services__item">покупка товара, не выходя из дома или офиса;</div>
-          <div class="about-company-services__item">
-            быстрое согласование товара с клиентом для подтверждения заказа;
-          </div>
-          <div class="about-company-services__item">обмен товаров ненадлежащего качества и многое другое.</div>
-        </div>
-        <h2 class="about-company__subtitle">Мы рады приветствовать вас на сайте нашей компании!</h2>
-        <p class="about-company__text-block text-block text-block_gray">
-          Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания,
-          касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
-          <a href="mailto:info@tesser.ru">info@tesser.ru</a>
-        </p>
-      </section>
+      <div class="container">
+        <div class="user-content">
+					<div class="work_area">
+                <hr> 			Заголовки: 
+            <br>
+            
+            <br>
+                  
+            <h1>&lt;H1&gt;&nbsp;&nbsp;Люстры </h1>
+                  
+            <h2>&lt;H2&gt;&nbsp;&nbsp;Люстры Люстры Люстры </h2>
+                  
+            <h3>&lt;H3&gt;&nbsp;&nbsp;Люстры Люстры Люстры Люстры </h3>
+                  
+            <h4>&lt;H4&gt;&nbsp;&nbsp;Люстры Люстры Люстры Люстры Люстры Люстры </h4>
+                  
+            <h5>&lt;H5&gt;&nbsp;&nbsp;Люстры Люстры Люстры Люстры Люстры Люстры Люстры Люстры </h5>
+            
+            <br>
+            <hr> 		<h2>	Текстовой блок со ссылками: </h2>
+            <br>
+            
+            <br>
+                  &lt;p&gt; 
+            <p>Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. <a href="#">Fusce non pulvinar sapien</a>. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectus. Fusce non pulvinar sapien. </p>
+            <hr> 	<h2>		Заголовки со ссылками: </h2>
+            <br>
+            
+            <br>
+                  <a href="#"> 
+              <h2>&lt;a&gt;&lt;H2&gt;&nbsp;&nbsp;Лучшие пляжи Ямайки</h2>
+            </a> 			 
+            <h2><a href="#">&lt;H2&gt;&lt;a&gt;&nbsp;&nbsp;Лучшие пляжи Ямайки</a></h2>
+                  
+            <h3><a href="#">&lt;H3&gt;&lt;a&gt;&nbsp;&nbsp;Лучшие пляжи Ямайки</a></h3>
+                  
+            <h4><a href="#">&lt;H4&gt;&lt;a&gt;&nbsp;&nbsp;Donec semper fermentum aliquam</a></h4>
+                  
+            <h5><a href="#">&lt;H5&gt;&lt;a&gt;&nbsp;&nbsp;Сегодня в 12:15</a></h5>
+            
+            <br>
+            <hr> 		<h2>	Блок выделенного текста с активной ссылкой: </h2>
+            <br>
+            
+            <br>
+                  &lt;p&gt;&lt;p&gt; 
+            <p>(leve 1) </p>
+            
+            <p>(leve 2)Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. Fusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectusFusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus.</p>
+            
+            <p></p>
+            
+            <br>
+                  &lt;p&gt;&lt;span&gt; 
+            <p><span>Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. Fusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectusFusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus.</span></p>
+            
+            <br>
+                  &lt;div&gt;&lt;p&gt; 
+            <div> 
+              <p>Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. Fusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectusFusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus.</p>
+            </div>
+            
+            <br>
+                  &lt;i&gt;<i>Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. Fusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectusFusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus.</i> 
+            <br>
+                    &lt;p&gt;&lt;i&gt; 
+            <p> <i>Donec semper fermentum aliquam. Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. Fusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis, ornare at lectusFusce non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. Nullam est sapien, consequat vel posuere quis, ornare at lectus.</i></p>
+            &nbsp; 
+            <br>
+            
+            <ul> 
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            
+              <li>Lore<img src="assets/img/nophoto.png" height="64" hspace="10" vspace="10" width="64" border="4" align="left">m ipsum dolor sit amet, consectetur adipiscing elit</li>
+            
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+            
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+            
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            </ul>
+                  
+            <p><img src="assets/img/nophoto.png"></p>
+            
+            <p> 			&lt;p&gt;</p>
+            
+            <p>Donec semper fermentum aliquam. <img src="assets/img/nophoto.png">Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. <a href="#">Fusce non pulvinar sapien</a>. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis,<img src="assets/img/nophoto.png"> ornare at lectus. Fusce non pulvinar sapien. </p>
+            <hr> 	<h2>		Список не нумерованый №1: </h2>
+            <br>
+            
+            <br>
+                  
+            <ul> 				 
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+                    
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+                    
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  </ul>
+            
+            <br>
+            <hr> 		<h2>	Список нумерованый №4: </h2>
+            <br>
+            
+            <br>
+                  
+            <ol> <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit 				 
+              </li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+                    
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+                    
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  </ol>
+                  
+            <table width="100%"> 				 
+              <tbody> 
+                <tr><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th><th>Колонка 5</th></tr>
+                      
+                <tr><td>date1</td><td>date2</td><td>date3</td><td>date4</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                    </tbody>
+            </table>
+            
+            <br>
+            <h2> border=1 </h2>
+            <br>
+                  
+            <table width="100%" border="1"> 				 
+              <tbody> 
+                <tr><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th><th>Колонка 5</th></tr>
+                      
+                <tr><td>date1</td><td>date2</td><td>date3</td><td>date4</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                      
+                <tr><td>date5</td><td>date6</td><td>date7</td><td>date8</td><td>date4</td></tr>
+                    </tbody>
+            </table>
+
+            </div>
+            <br><br><br><br>
+ 					</div>
+      </div>
     </main>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer-column">
@@ -570,7 +701,7 @@
       </div>
       <div class="footer__divider"></div>
       <div class="container">
-        <a class="footer__logotype" href="">ТЕССЕР</a>
+        <a class="footer__logotype" href="">ТЕССЕР</a> 
         <div class="footer__copyright">
           © 2024 ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита, сантехники.
         </div>
@@ -621,6 +752,6 @@
         </button>
       </div>
     </div>
-
+    
   </body>
 </html>
