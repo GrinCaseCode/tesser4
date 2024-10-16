@@ -40,7 +40,6 @@
 }
 .price-main {
   font-size: 27px;
-  font-weight: 600;
 }
 .card-line button {
   padding-left: 30px;
@@ -395,22 +394,7 @@
   margin-top: 35px;
   margin-bottom: 20px;
 }
-.item-catalog_collection .item-catalog__image {
-  padding-top: 100%;
-  height: auto;
-  position: relative;
-  width: 100%;
-}
-.item-catalog_collection .item-catalog__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.item-catalog_collection .item-catalog__title {
-  margin-left: 0;
-}
+
 .page-card .title {
   font-size: 19px;
 }

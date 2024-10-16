@@ -89,6 +89,7 @@
 }
 .item-catalog .price-main {
   font-size: 16px;
+  font-weight: 600;
 }
 .price-old {
   font-size: 12px;
@@ -278,5 +279,26 @@
   }
   .item-catalog__features {
     margin-top: 50px;
+  }
+  .item-catalog_collection .item-catalog__image {
+    padding-top: 100%;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  .item-catalog_collection .item-catalog__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .item-catalog_collection .item-catalog__title {
+    margin-left: 0;
+  }
+  .item-catalog_collection .item-catalog__prices {
+    margin: 0;
+    margin-top: 8px;
+    order: initial;
   }
 }

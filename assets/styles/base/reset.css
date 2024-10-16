@@ -72,7 +72,9 @@ ol {
   padding-left: 0;
 }
 
-ul > li,
-ol > li {
+ul > li {
   list-style-type: none;
+}
+ol {
+  padding-left: 20px;
 }

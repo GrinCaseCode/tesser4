@@ -50,3 +50,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+$(document).ready(function() {
+  // Функция для загрузки контента через AJAX
+  function loadModalContent(modalId, url) {
+    $.ajax({
+      url: url, // Укажите путь к вашему HTML файлу
+      method: 'GET',
+      success: function(response) {
+        // Вставляем загруженный контент в модальное окно
+        $('.modal[data-modal-id="' + modalId + '"] .modal-content__inner').html(response);
+        // Показываем модальное окно
+        $('.modal[data-modal-id="' + modalId + '"]').fadeIn();
+      },
+      error: function() {
+        alert('Ошибка при загрузке контента.');
+      }
+    });
+  }
+
+  // Открытие модального окна при клике на кнопку
+  $('button[data-modal-id]').on('click', function() {
+    const modalId = $(this).data('modal-id'); 
+    const url = $(this).data('modal-url'); 
+    loadModalContent(modalId, url);
+  });
+
+});

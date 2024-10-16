@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   column-gap: 5px;
-  width: fit-content;
+  justify-content: center;
 }
 .pagination__item {
   display: flex;
@@ -13,6 +13,7 @@
   border: 1px solid var(--color-border-primary);
   background-color: #fff;
 }
+.pagination__item:hover,
 .pagination__item_active {
   color: #fff;
   border-color: var(--color-accent);

@@ -19,7 +19,7 @@
   display: inline-block;
   vertical-align: middle;
 }
-.list-catalog a {
+.list-catalog a { 
   transition: all 0.3s;
   border-bottom: 1px transparent solid;
 }

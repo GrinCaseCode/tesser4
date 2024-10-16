@@ -119,4 +119,19 @@ $(document).ready(function() {
     }
   });
 
+  $(".search-main .header-search__control").on("keyup", function() {
+    if ($(this).val().trim() === "") {
+        $(".search-results").fadeOut(200);
+    } else {
+        $(".search-results").fadeIn(200);
+    }
+});
+
+$(document).mouseup(function (e) {
+  var container = $(".search-main");
+  if (container.has(e.target).length === 0){
+    $(".search-results").fadeOut(200);
+  }
+});
+
 });
