@@ -17,6 +17,10 @@
   background: #fff;
   position: relative;
 }
+.item-catalog a {
+  color: inherit;
+  border: none;
+}
 .item-catalog__image {
   height: 263px;
   display: block;
@@ -117,6 +121,7 @@
 }
 .item-catalog__info .button {
   width: 100%;
+  color: #fff;
 }
 .link-card {
   margin: 0 10px;

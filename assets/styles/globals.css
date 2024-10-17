@@ -10,6 +10,11 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent) #fff;
 }
+html * {
+  scrollbar-gutter: initial;
+scrollbar-width: initial;
+scrollbar-color:initial;
+}
 
 body {
   font-family: "Gotham Pro", sans-serif;

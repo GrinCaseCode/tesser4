@@ -5,6 +5,10 @@
 .breadcrumbs__separator {
   content: "/";
 }
+.breadcrumbs a {
+  color: initial;
+  border: none;
+}
 .breadcrumbs a.breadcrumbs__item {
   text-decoration-color: transparent;
   text-decoration-line: underline;

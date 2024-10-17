@@ -2,8 +2,17 @@
   z-index: 100;
   background-color: var(--color-header-background);
 }
+.header-touch a,
+.header a {
+  color: initial;
+  border: none;
+}
 .header-top-navigation {
   display: flex;
+}
+header ul {
+  padding-left: 0;
+  list-style-type: none;
 }
 .header-top-navigation__item {
   position: relative;
@@ -326,7 +335,7 @@
   text-align: center;
   width: 100%;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
   background-color: var(--color-accent);
   transition: background-color 200ms ease-in-out;
 }

@@ -119,19 +119,23 @@ $(document).ready(function() {
     }
   });
 
-  $(".search-main .header-search__control").on("keyup", function() {
+  $(".search-main input").on("keyup", function() {
+    var $searchMain = $(this).closest(".search-main");
+    var $searchResults = $searchMain.find(".search-results");
+
     if ($(this).val().trim() === "") {
-        $(".search-results").fadeOut(200);
+        $searchResults.fadeOut(200);
     } else {
-        $(".search-results").fadeIn(200);
+        $searchResults.fadeIn(200);
     }
 });
 
-$(document).mouseup(function (e) {
-  var container = $(".search-main");
-  if (container.has(e.target).length === 0){
-    $(".search-results").fadeOut(200);
-  }
+$(document).mouseup(function(e) {
+    $(".search-main").each(function() {
+        var $searchMain = $(this);
+        if (!$searchMain.is(e.target) && $searchMain.has(e.target).length === 0) {
+            $searchMain.find(".search-results").fadeOut(200);
+        }
+    });
 });
-
 });

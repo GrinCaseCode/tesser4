@@ -9,13 +9,14 @@
   flex: 1;
   min-width: 0;
 }
-.slider-card:not(.slick-initialized) > li:not(:first-child) {
+.slider-card:not(.slick-initialized) > *:not(:first-child) {
 	display: none;
 }
 .slider-card__item {
   height: 540px;
   cursor: url(../../assets/img/lense.png), zoom-in;
   display: block;
+  border: none;
 }
 .slider-card__item img {
 	width: 100%;
@@ -40,6 +41,7 @@
 }
 .price-main {
   font-size: 27px;
+  font-weight: 600;
 }
 .card-line button {
   padding-left: 30px;
@@ -86,6 +88,7 @@
   height: 112px;
   display: block;
   border-radius: 10px;
+  border: none;
   position: relative;
 }
 .collection-projects__item img {
@@ -151,11 +154,14 @@
 }
 .card-anchors ul {
   gap: 30px;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   align-items: center;
 }
 .card-anchors ul a {
   color: #fff;
+  border: none;
 }
 .card-tabs {
   margin-bottom: 30px;
@@ -163,6 +169,8 @@
 }
 .card-tabs ul {
   gap: 70px;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   align-items: center;
 }
@@ -228,6 +236,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 .card-discontinued a {
+  color: inherit;
   border-bottom: 1px solid;
   transition: all 0.3s;
 }

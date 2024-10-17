@@ -196,6 +196,8 @@
   position: relative;
   width: 100%;
   height: 100%;
+  border: none;
+  color: initial;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   -webkit-transition: .2s ease-in-out;
@@ -228,6 +230,10 @@
 }
 .sorting-catalog strong {
   font-weight: 600;
+}
+.sorting-catalog a {
+  border: none;
+  color: initial;
 }
 .sorting-catalog .active {
   font-weight: 600;

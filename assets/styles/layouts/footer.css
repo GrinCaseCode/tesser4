@@ -2,6 +2,10 @@
   padding-block: 25px;
   background-color: #ececec;
 }
+.footer a {
+  color: initial;
+  border: none;
+}
 .footer > .container {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;

@@ -2,8 +2,8 @@
 .slider-catalog {
   padding-top: 30px;
 }
-.slider-catalog-main:not(.slick-initialized) > li:not(:first-child),
-.slider-catalog:not(.slick-initialized) > li:not(:first-child) {
+.slider-catalog-main:not(.slick-initialized) > *:not(:first-child),
+.slider-catalog:not(.slick-initialized) > *:not(:first-child) {
   display: none;
 }
 .slider-catalog-main .slick-track,

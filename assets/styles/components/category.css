@@ -21,6 +21,7 @@
 .item-category {
   background-color: rgba(0, 0, 0, .8);
   display: block;
+  border: none;
   position: relative;
 }
 .item-category__image {

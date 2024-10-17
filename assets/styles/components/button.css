@@ -1,5 +1,6 @@
 .button {
   display: block;
+  padding: 0 30px;
   padding-block: 10px;
   font-size: 12px;
   font-weight: 700;

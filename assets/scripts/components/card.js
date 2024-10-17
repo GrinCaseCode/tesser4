@@ -57,7 +57,7 @@ $('.btn-tab').click(function() {
   var targetId = $(this).attr('href');
   
   $('html, body').animate({
-    scrollTop: $(targetId).offset().top - 148
+    scrollTop: $(targetId).offset().top - 48
   }, 800); 
 });
 });

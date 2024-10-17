@@ -13,8 +13,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--color-accent);
+  border-bottom: 1px var(--color-accent) solid;
   text-decoration: inherit;
+}
+a:hover {
+  border-color: transparent;
 }
 a:focus {
   outline: none;
@@ -72,9 +76,26 @@ ol {
   padding-left: 0;
 }
 
-ul > li {
-  list-style-type: none;
-}
+ul,
 ol {
   padding-left: 20px;
+}
+table {
+  border-spacing: 0;
+}
+p img,
+li img {
+  float: left;
+}
+br,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  clear: both;
 }
