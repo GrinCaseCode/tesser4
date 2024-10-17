@@ -1,0 +1,1970 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TESSER</title>
+
+    <link rel="stylesheet" href="assets/styles/base/typography.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/base/reset.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/base/colors.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/globals.css?ver=1.10" />
+
+    <link rel="stylesheet" href="assets/styles/layouts/container.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/layouts/header.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/layouts/footer.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/scripts/lib/ion.rangeSlider-master/css/ion.rangeSlider.min.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.10" />
+
+    <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/text-block.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.10" /> 
+    <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.10" />
+
+
+    <link rel="stylesheet" href="assets/styles/products.css?ver=1.10" />
+
+    <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.10"></script>
+    <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.10"></script>
+    <script src="assets/scripts/components/fancybox.js?ver=1.10"></script>
+    <script src="assets/scripts/lib/phoneinput.js?ver=1.10"></script>
+    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.10"></script>
+    <script src="assets/scripts/lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/scripts/components/hamburger-menu.js?ver=1.10"></script>
+    <script src="assets/scripts/components/header.js?ver=1.10"></script>
+    <script src="assets/scripts/components/modal.js?ver=1.10"></script>
+    <script src="assets/scripts/components/quntity.js?ver=1.10"></script>
+    <script src="assets/scripts/components/products.js?ver=1.10"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top-navigation">
+          <a class="header-top-navigation__item header-top-navigation__item_active" href="">О компании</a>
+          <a class="header-top-navigation__item" href="">Доставка и оплата</a>
+          <a class="header-top-navigation__item" href="">Гарантия и возврат</a>
+          <div class="header-top-navigation-widgets">
+            <a class="header-top-navigation-widgets-item" href="">
+              <div class="header-top-navigation-widgets-item__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"
+                  />
+                </svg>
+              </div>
+              <div class="header-top-navigation-widgets-item__text">Избранное:</div>
+              <div class="header-top-navigation-widgets-item__badge">0</div>
+            </a>
+            <a class="header-top-navigation-widgets-item" href="">
+              <div class="header-top-navigation-widgets-item__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M15 21H9V3h6zm-4-2h2V5h-2zm-3 2H2V11h6zm-4-2h2v-6H4zm18 2h-6V8h6zm-4-2h2v-9h-2z"
+                  />
+                </svg>
+              </div>
+              <div class="header-top-navigation-widgets-item__text">Сравнение:</div>
+              <div class="header-top-navigation-widgets-item__badge">0</div>
+            </a>
+          </div>
+          <div class="header-top-navigation-auth">
+            <a class="header-top-navigation-auth__item" href="">Вход</a>
+            <a class="header-top-navigation-auth__item" href="">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container">
+          <a class="header__logotype" href="#">ТЕССЕР</a>
+          <div class="header-region">
+            <div class="header-region__title">Регион:</div>
+            <div class="header-region-select">
+              <button class="header-region-select-button" type="button">
+                <div class="header-region-select-button__text">Москва</div>
+                <svg class="header-region-select-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m6 9l6 6l6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header-region__dropdown">
+              <ul>
+                <li class="active">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Екатеринбург</li>
+                <li>Казань</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-opening-hours">
+            <div class="header-opening-hours__title">Режим работы</div>
+            <div class="header-opening-hours__content">10:00 - 20:00 Сб - Вс: Выходной</div>
+          </div>
+          <div class="header-call">
+            <div class="header-call-title">
+              <svg class="header-call-title__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                />
+              </svg>
+              <div class="header-call-title__text">8 (800) 888-99-00</div>
+            </div>
+            <button class="header-call__link link" type="button" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">заказать звонок</button>
+          </div>
+          <div class="header-cart">
+            <div class="header-cart__icon-wrapper">
+              <svg
+                class="header-cart__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+                />
+              </svg>
+            </div>
+            <div class="header-cart-body">
+              <div class="header-cart-body__title">Корзина</div>
+              <div class="header-cart-body__price">0 ₽</div>
+            </div>
+            <div class="header-cart__badge">0</div>
+            <div class="header-cart-popup">
+              <div class="header-cart-popup-item">
+                <img class="header-cart-popup-item__image" src="https://placehold.co/600x400/EEE/31343C" alt="" />
+                <a class="header-cart-popup-item__name" href="">Ламинат Kaindl Natural Touch Венге Аврора</a>
+                <div class="header-cart-popup-item__right">
+                  <div class="header-cart-popup-item__price">1 700 ₽</div>
+                  <div class="header-cart-popup-item__discount">2250 ₽</div>
+                  <div class="header-cart-popup-item__amount">x 1 шт</div>
+                </div>
+                <button class="header-cart-popup-item__remove-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="header-cart-popup-footer">
+                <div class="header-cart-popup-footer__row">
+                  <div class="header-cart-popup-footer__text">
+                    Товаров:
+                    <b>3</b>
+                  </div>
+                  <div class="header-cart-popup-footer__text">
+                    На сумму:
+                    <b>0 ₽</b>
+                  </div>
+                </div>
+                <a class="header-cart-popup-footer__button" href=""> Оформить заказ </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom-navigation">
+        <div class="container">
+          <button class="header-bottom-navigation-catalog-button" type="button">
+            <div class="header-bottom-navigation-catalog-button__icon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="header-bottom-navigation-catalog-button__text">Каталог товаров</div>
+          </button>
+          <a class="header-bottom-navigation__item" href="">Акции</a>
+          <a class="header-bottom-navigation__item" href="">Услуги</a>
+          <a class="header-bottom-navigation__item" href="">Магазины</a>
+          <div class="search-main">
+            <form class="header-bottom-navigation__search header-search">
+              <input class="header-search__control" type="search" name="query" placeholder="Поиск по сайту..." required />
+              <button class="header-search-button" type="submit">
+                <svg class="header-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="search-results">
+              <div class="search-results__list">
+                <a href="#" class="search-results__item"><b>Лам</b>инат</a>
+                <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552</a>
+                <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-берёза</a>
+                <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-серый</a>
+                <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-бежевый</a>
+                <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-коричневый</a>
+              </div>
+              <a href="#" class="search-results__all">Все результаты <i class="far fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="header-catalog">
+            <ul class="header-catalog-sidebar">
+              <li>
+                <a class="header-catalog-sidebar__item" href="" data-catalog-content-id="1">Керамическая плитка</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="" data-catalog-content-id="2">Керамогранит</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Клинкер</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Мозайка</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Напольные покрытия</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Отопление</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Сантехника</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Сопутствующие товары</a>
+              </li>
+              <li>
+                <a class="header-catalog-sidebar__item" href="">Тёплые полы</a>
+              </li>
+            </ul>
+            <div class="header-catalog__body">
+              <div class="header-catalog-content" data-catalog-content-id="1">
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+              </div>
+              <div class="header-catalog-content" data-catalog-content-id="2">
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+                <div class="header-catalog-content-column">
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                  <a class="header-catalog-content-column__item" href="">Для бассейна</a>
+                  <div class="header-catalog-content-column__item">Для бассейна</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header-touch">
+      <button class="header-touch-hamburger-button" type="button">
+        <div class="header-touch-hamburger-button__icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
+      <a class="header-touch__logotype" href="">ТЕССЕР</a>
+      <div class="header-touch-widgets">
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M15 21H9V3h6zm-4-2h2V5h-2zm-3 2H2V11h6zm-4-2h2v-6H4zm18 2h-6V8h6zm-4-2h2v-9h-2z"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+        <a class="header-touch-widgets-item" href="">
+          <div class="header-touch-widgets-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+              />
+            </svg>
+          </div>
+          <div class="header-touch-widgets-item__badge">0</div>
+        </a>
+      </div>
+      <div class="header-touch__hamburger-menu hamburger-menu">
+        <div class="hamburger-menu__backdrop"></div>
+        <div class="hamburger-menu__wrapper">
+          <div class="hamburger-menu-search__wrapper">
+            <div class="search-main">
+              <form class="hamburger-menu-search">
+                <input
+                  class="hamburger-menu-search__control"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту..."
+                  required
+                />
+                <button class="hamburger-menu-search-button" type="submit">
+                  <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div class="search-results">
+                <div class="search-results__list">
+                  <a href="#" class="search-results__item"><b>Лам</b>инат</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-берёза</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-серый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-бежевый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-коричневый</a>
+                </div>
+                <a href="#" class="search-results__all">Все результаты <i class="far fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <button class="hamburger-menu-catalog-button" type="button">
+            <div class="hamburger-menu-catalog-button__text">Каталог</div>
+            <svg class="hamburger-menu-catalog-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z" />
+            </svg>
+          </button>
+          <div class="hamburger-menu-auth">
+            <a class="hamburger-menu-auth__item" href="">Вход</a>
+            <span class="hamburger-menu-auth__separator">/</span>
+            <a class="hamburger-menu-auth__item" href="">Регистрация</a>
+          </div>
+          <div class="hamburger-menu-navigation">
+            <a class="hamburger-menu-navigation__item" href="">Магазины</a>
+            <a class="hamburger-menu-navigation__item" href="">О компании</a>
+            <a class="hamburger-menu-navigation__item" href="">Акции</a>
+            <a class="hamburger-menu-navigation__item" href="">Услуги</a>
+            <a class="hamburger-menu-navigation__item" href="">Доставка и оплата</a>
+            <a class="hamburger-menu-navigation__item" href="">Гарантия и возврат</a>
+          </div>
+          <div class="hamburger-menu-catalog-menu" data-catalog-menu-id="1">
+            <button class="hamburger-menu-catalog-menu__close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z" />
+              </svg>
+              Назад
+            </button>
+            <a class="hamburger-menu-catalog-menu__item" href="" data-catalog-menu-id="2">
+              Ламинат
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z" />
+              </svg>
+            </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Паркетная доска </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Ковролин и ковровая плитка </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Плитка ПВХ </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Линолеум </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Плинтус </a>
+            <a class="hamburger-menu-catalog-menu__item" href=""> Подложка под паркет и ламинат </a>
+          </div>
+          <div class="hamburger-menu-catalog-menu" data-catalog-menu-id="2">
+            <button class="hamburger-menu-catalog-menu__close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z" />
+              </svg>
+              Назад
+            </button>
+            <div class="hamburger-menu-catalog-menu-column">
+              <div class="hamburger-menu-catalog-menu-column__title">Бренды</div>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">Kaindl</a>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">Kaindl</a>
+            </div>
+            <div class="hamburger-menu-catalog-menu-column">
+              <div class="hamburger-menu-catalog-menu-column__title">Класс</div>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">31 класс</a>
+              <a class="hamburger-menu-catalog-menu-column__item" href="">31 класс</a>
+            </div>
+          </div>
+
+          <div class="hamburger-menu-bottom">
+            <div class="header-call">
+              <div class="header-call-title">
+                <svg class="header-call-title__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <div class="header-call-title__text">8 (800) 888-99-00</div>
+              </div>
+              <button class="header-call__link link" type="button" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">заказать звонок</button>
+            </div>
+            <div class="header-opening-hours">
+              <div class="header-opening-hours__title">Режим работы</div>
+              <div class="header-opening-hours__content">10:00 - 20:00 Сб - Вс: Выходной</div>
+            </div>
+            <div class="header-region">
+              <div class="header-region__title">Регион:</div>
+              <div class="header-region-select">
+                <button class="header-region-select-button" type="button">
+                  <div class="header-region-select-button__text">Москва</div>
+                  <svg class="header-region-select-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m6 9l6 6l6-6"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="header-region__dropdown">
+                <ul>
+                  <li class="active">Москва</li>
+                  <li>Санкт-Петербург</li>
+                  <li>Екатеринбург</li>
+                  <li>Казань</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="breadcrumbs container">
+      <a class="breadcrumbs__item" href="">Главная</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__item">Керамическая плитка</span>
+    </section>
+
+    <main class="main">
+      <section class="page-products">
+        <div class="container">
+          <div class="tab-products" data-tab-product="elements">
+            <div class="row-products">
+              <div class="col-sidebar">
+                <div class="tabs-products">
+                  <button class="tabs-products__button active" data-value-product="elements">Элементы</button>
+                  <button class="tabs-products__button" data-value-product="collections">Коллекции</button>
+                </div>
+                <div class="btn-open-sidebar"><i class="fas fa-filter"></i></div>
+                <div class="unit-sidebar">
+                  <div class="unit-sidebar__head">
+                    <div class="unit-sidebar__title">Фильтр</div>
+                    <div class="unit-sidebar__close"><i class="fal fa-times"></i></div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="5000" value="5000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Область применения</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для коридора <strong>(11)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для кухни <strong>(46)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для пола <strong>(124)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Общественные помещения <strong>(6)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Строительная плитка <strong>(3)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Спецпредложения</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цвет</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Производитель</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Страна производства</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Дизайн</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ширина</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Высота</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Поверхность</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Покрытие</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Морозостойкость</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ректифицированная</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Материал</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Место в коллекции</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tooltip-sidebar">
+                    <div class="tooltip-sidebar__title">Выбрано: 3</div>
+                    <a href="#" class="button">Показать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-products">
+                <div class="row-catalog">
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                        <div class="item-label item-label_hit">Хит</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                        <div class="item-label item-label_new">Новинка</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog2.jpg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog3.png" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog4.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog3.png" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog4.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                        <div class="item-label item-label_hit">Хит</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                        <div class="item-label item-label_new">Новинка</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog2.jpg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog3.png" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog4.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog3.png" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog">
+                      <div class="labels-wrap">
+                        <div class="item-label item-label_sale">-20%</div>
+                      </div>
+                      <div class="item-catalog__brand">
+                        <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                      </div>
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog4.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                        <div class="item-catalog__features">
+                          <p>Страна: <strong>Германия</strong></p>
+                          <p>Производитель: <strong>Kronotex</strong></p>
+                          <p>Класс: <strong>33</strong></p>
+                          <p>Толщина, мм: <strong>10</strong></p>
+                        </div>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                          <div class="price-old">1 170 ₽/шт</div>
+                        </div>
+                      </div>
+                      <div class="item-catalog__info">
+                        <a href="#" class="button">Рассчитать стоимость</a>
+                        <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                        <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <a href="#" class="pagination__item pagination__item_active">1</a>
+                  <a href="#" class="pagination__item">2</a>
+                  <a href="#" class="pagination__item">3</a>
+                  <a href="#" class="pagination__item">4</a>
+                  <a href="#" class="pagination__item"><i class="far fa-chevron-right"></i></a>
+                </div>
+                <div class="info-boxes">
+                  <div class="box-info">
+                    <h2>Керамическая плитка ТЕССЕР: облицовка стен от лучших российских и европейских производителей. Материалы любых размеров и цветов</h2>
+                    <p>Керамическая и кафельная плитка – самый практичный, износостойкий и красивый отделочный материал, который широко применяется для отделки полов и стен в помещениях различного назначения. Сегодня такую облицовку успешно используют не только при отделке кухонь и ванных комнат. Плитку успешно применяют для обустройства фасадов, мансард, террас, прихожих, а также жилых комнат и помещений коммерческого назначения. Эксплуатационные характеристики покрытия всегда находятся на высочайшем уровне: плитка имеет долгий срок службы, устойчива к воздействию влаги и перепадам температурных режимов, механическим нагрузкам, она не вступает в контакт с химическими средствами и абсолютно гигиенична.</p>
+                  </div>
+                  <div class="box-info">
+                    <h3>Многообразие керамической плитки</h3>
+                    <p>Керамическая плитка привлекает разнообразием предлагаемых решений в дизайне. Современные производители предлагают купить кафель практически любых цветов и размеров, с необычными декоративными элементами и стильными бордюрами, которые помогут в реализации лаконичного и необычного дизайн-проекта. Предложены потребителям и тематические коллекции, позволяющие легко создать в ванной комнате восточный, морской или флористический стиль с учетом всех индивидуальных пожеланий. Особое внимание привлекают модели плитки, которые имитируют поверхность древесины ценных пород, ткани, кожи, металла, мрамора, природного камня. В подобном исполнении представлена как напольная плитка, так и плитка для стен, что раскрывает новые возможности в применении керамики. Такие покрытия можно увидеть в гостиной, кабинете, коридоре, прихожей, а также в спальне.</p>
+                  </div>
+                  <div class="box-info">
+                    <h3>ТЕССЕР: купить плитку по выгодной цене!</h3>
+                    <p>В ТЕССЕР вы сможете подобрать керамическую плитку практически всех европейских и российских производителей по лучшей цене. В ассортименте представлена как изысканная облицовка польских, испанских, итальянских марок, так и демократичные по стоимости модели плитки российских брендов высокого качества. Весь товар всегда представлен на складе компании, что позволяет легко выбрать и получить необходимую плитку, не затягивая процесс ремонта надолго. В каталоге вы сможете получить основную информацию обо всех представленных в ассортименте коллекциях настенной и напольной плитки, ее размерах, цветовых исполнениях и технических характеристиках, подобрав подходящие по всем критериям материалы на любой бюджет.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-products" data-tab-product="collections">
+            <div class="row-products">
+              <div class="col-sidebar">
+                <div class="tabs-products">
+                  <button class="tabs-products__button" data-value-product="elements">Элементы</button>
+                  <button class="tabs-products__button active" data-value-product="collections">Коллекции</button>
+                </div>
+                <div class="btn-open-sidebar"><i class="fas fa-filter"></i></div>
+                <div class="unit-sidebar">
+                  <div class="unit-sidebar__head">
+                    <div class="unit-sidebar__title">Фильтр</div>
+                    <div class="unit-sidebar__close"><i class="fal fa-times"></i></div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="range-catalog">
+                        <div class="range-controls">
+                          <div class="input-range">
+                            <span>от</span>
+                            <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                          </div>
+                          <div class="input-range">
+                            <span>до</span>
+                            <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                          </div>
+                        </div>
+                        <input type="text" class="range-catalog__input" name="my_range" value="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar active">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Область применения</div>
+                    <div class="item-sidebar__content" style="display: block;">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для коридора <strong>(11)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для кухни <strong>(46)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для пола <strong>(124)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Общественные помещения <strong>(6)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Строительная плитка <strong>(3)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Спецпредложения</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цвет</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Производитель</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Страна производства</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Дизайн</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ширина</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Высота</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Поверхность</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Покрытие</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Морозостойкость</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ректифицированная</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-sidebar">
+                    <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Материал</div>
+                    <div class="item-sidebar__content">
+                      <div class="list-sidebar">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для ванной <strong>(307)</strong></span>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"/>
+                            <span>Для гостиной <strong>(18)</strong></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tooltip-sidebar">
+                    <div class="tooltip-sidebar__title">Выбрано: 3</div>
+                    <a href="#" class="button">Показать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-products">
+                <div class="product-brands">
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product1.jpg" alt="alt">
+                    <span>Alsafloor</span>
+                  </a>
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product2.jpg" alt="alt">
+                    <span>Kaindl</span>
+                  </a>
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product3.jpg" alt="alt">
+                    <span>Kronopol</span>
+                  </a>
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product4.jpg" alt="alt">
+                    <span>Kronotex</span>
+                  </a>
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product5.png" alt="alt">
+                    <span>Pergo</span>
+                  </a>
+                  <a href="#" class="unit-brand">
+                    <img src="assets/img/brand_product6.jpg" alt="alt">
+                    <span>Quick Step</span>
+                  </a>
+                </div>
+                <div class="sorting-catalog">
+                  <strong>Сортировать по:</strong>
+                  <a href="#" class="active">Цена</a>
+                  <a href="#">Популярность</a>
+                  <a href="#">Новинки</a>
+                  <a href="#">По алфавиту</a>
+                </div>
+                <div class="row-catalog">
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog1.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog2.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-catalog">
+                    <div class="item-catalog item-catalog_collection">
+                      <a href="#" class="item-catalog__image">
+                        <img src="assets/img/catalog3.jpg" alt="alt">
+                      </a>
+                      <div class="item-catalog__content">
+                        <div class="item-catalog__subtitle">Коллекция</div>
+                        <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                        <div class="item-catalog__prices">
+                          <div class="price-main">936 ₽/шт</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <a href="#" class="pagination__item pagination__item_active">1</a>
+                  <a href="#" class="pagination__item">2</a>
+                  <a href="#" class="pagination__item">3</a>
+                  <a href="#" class="pagination__item">4</a>
+                  <a href="#" class="pagination__item"><i class="far fa-chevron-right"></i></a>
+                </div>
+                <div class="info-boxes">
+                  <div class="box-info">
+                    <h2>Керамическая плитка ТЕССЕР: облицовка стен от лучших российских и европейских производителей. Материалы любых размеров и цветов</h2>
+                    <p>Керамическая и кафельная плитка – самый практичный, износостойкий и красивый отделочный материал, который широко применяется для отделки полов и стен в помещениях различного назначения. Сегодня такую облицовку успешно используют не только при отделке кухонь и ванных комнат. Плитку успешно применяют для обустройства фасадов, мансард, террас, прихожих, а также жилых комнат и помещений коммерческого назначения. Эксплуатационные характеристики покрытия всегда находятся на высочайшем уровне: плитка имеет долгий срок службы, устойчива к воздействию влаги и перепадам температурных режимов, механическим нагрузкам, она не вступает в контакт с химическими средствами и абсолютно гигиенична.</p>
+                  </div>
+                  <div class="box-info">
+                    <h3>Многообразие керамической плитки</h3>
+                    <p>Керамическая плитка привлекает разнообразием предлагаемых решений в дизайне. Современные производители предлагают купить кафель практически любых цветов и размеров, с необычными декоративными элементами и стильными бордюрами, которые помогут в реализации лаконичного и необычного дизайн-проекта. Предложены потребителям и тематические коллекции, позволяющие легко создать в ванной комнате восточный, морской или флористический стиль с учетом всех индивидуальных пожеланий. Особое внимание привлекают модели плитки, которые имитируют поверхность древесины ценных пород, ткани, кожи, металла, мрамора, природного камня. В подобном исполнении представлена как напольная плитка, так и плитка для стен, что раскрывает новые возможности в применении керамики. Такие покрытия можно увидеть в гостиной, кабинете, коридоре, прихожей, а также в спальне.</p>
+                  </div>
+                  <div class="box-info">
+                    <h3>ТЕССЕР: купить плитку по выгодной цене!</h3>
+                    <p>В ТЕССЕР вы сможете подобрать керамическую плитку практически всех европейских и российских производителей по лучшей цене. В ассортименте представлена как изысканная облицовка польских, испанских, итальянских марок, так и демократичные по стоимости модели плитки российских брендов высокого качества. Весь товар всегда представлен на складе компании, что позволяет легко выбрать и получить необходимую плитку, не затягивая процесс ремонта надолго. В каталоге вы сможете получить основную информацию обо всех представленных в ассортименте коллекциях настенной и напольной плитки, ее размерах, цветовых исполнениях и технических характеристиках, подобрав подходящие по всем критериям материалы на любой бюджет.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback-product">
+        <div class="container">
+          <div class="callback">
+            <h2 class="callback__title">Позвоните нам - мы создадим Дизайн-проект для Вас <strong>В ПОДАРОК!</strong></h2>
+            <a href="tel:+78009997700" class="callback__phone">
+              <i class="fa fa-phone-alt"></i>
+              <b>+7 800 999 77 00</b>
+            </a>
+            <button class="button" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-column">
+          <div class="footer-column__title">Информация о магазине</div>
+          <div class="footer-column__items">
+            <div class="footer-column__item">г. Санкт-Петербург, Петергофское шоссе, 96, лит.А</div>
+            <div class="footer-column__item">
+              <b>Звоните нам:</b>
+              <a href="tel:+7 800 999 77 00">+7 800 999 77 00</a>
+            </div>
+            <div class="footer-column__item">
+              <b>E-mail:</b>
+              <a href="mailto:floor@floor.ru">floor@floor.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column__title">О компании</div>
+          <div class="footer-column__items">
+            <a class="footer-column__item" href="">Магазины</a>
+            <a class="footer-column__item" href="">О компании</a>
+            <a class="footer-column__item" href="">Акции</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column__title">Покупателям</div>
+          <div class="footer-column__items">
+            <a class="footer-column__item" href="">Услуги</a>
+            <a class="footer-column__item" href="">Доставка и оплата</a>
+            <a class="footer-column__item" href="">Гарантия и возврат</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="container">
+        <a class="footer__logotype" href="">ТЕССЕР</a> 
+        <div class="footer__copyright">
+          © 2024 ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита, сантехники.
+        </div>
+        <div class="footer-socials">
+          <a class="footer-socials-item" href="">
+            <svg class="footer-socials-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="#71aaeb"
+                d="M4.26 4.26C3 5.532 3 7.566 3 11.64v.72c0 4.068 0 6.102 1.26 7.38C5.532 21 7.566 21 11.64 21h.72c4.068 0 6.102 0 7.38-1.26C21 18.468 21 16.434 21 12.36v-.72c0-4.068 0-6.102-1.26-7.38C18.468 3 16.434 3 12.36 3h-.72C7.572 3 5.538 3 4.26 4.26m1.776 4.218H8.1c.066 3.432 1.578 4.884 2.778 5.184V8.478h1.938v2.958c1.182-.126 2.43-1.476 2.85-2.964h1.932a5.72 5.72 0 0 1-2.628 3.738a5.92 5.92 0 0 1 3.078 3.756h-2.13c-.456-1.422-1.596-2.526-3.102-2.676v2.676h-.24c-4.104 0-6.444-2.808-6.54-7.488"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" data-modal-id="call">
+      <div class="modal__backdrop"></div>
+      
+      <div class="modal-content">
+        <div class="modal-content__inner">
+
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" data-modal-id="modal-project">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content__inner">
+
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+  </body>
+</html>

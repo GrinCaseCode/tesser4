@@ -31,9 +31,15 @@
     <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/components/category.css?ver=1.10" />
 
-
+    <link rel="stylesheet" href="assets/styles/about-company.css?ver=1.10" />
     <link rel="stylesheet" href="assets/styles/products.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/card.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/catalog.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/index.css?ver=1.10" />
+    <link rel="stylesheet" href="assets/styles/product.css?ver=1.10" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.10"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.10"></script>
@@ -46,6 +52,10 @@
     <script src="assets/scripts/components/modal.js?ver=1.10"></script>
     <script src="assets/scripts/components/quntity.js?ver=1.10"></script>
     <script src="assets/scripts/components/products.js?ver=1.10"></script>
+    <script src="assets/scripts/components/anchors.js?ver=1.10"></script>
+    <script src="assets/scripts/components/product.js?ver=1.10"></script>
+    <script src="assets/scripts/components/slider-catalog.js?ver=1.10"></script>
+    <script src="assets/scripts/components/card.js?ver=1.10"></script>
   </head>
   <body>
     <header class="header">
@@ -367,23 +377,36 @@
         <div class="hamburger-menu__backdrop"></div>
         <div class="hamburger-menu__wrapper">
           <div class="hamburger-menu-search__wrapper">
-            <form class="hamburger-menu-search">
-              <input
-                class="hamburger-menu-search__control"
-                type="search"
-                name="query"
-                placeholder="Поиск по сайту..."
-                required
-              />
-              <button class="hamburger-menu-search-button" type="submit">
-                <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
-                  />
-                </svg>
-              </button>
-            </form>
+            <div class="search-main">
+              <form class="hamburger-menu-search">
+                <input
+                  class="hamburger-menu-search__control"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту..."
+                  required
+                />
+                <button class="hamburger-menu-search-button" type="submit">
+                  <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div class="search-results">
+                <div class="search-results__list">
+                  <a href="#" class="search-results__item"><b>Лам</b>инат</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-берёза</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-серый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-бежевый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-коричневый</a>
+                </div>
+                <a href="#" class="search-results__all">Все результаты <i class="far fa-angle-right"></i></a>
+              </div>
+            </div>
           </div>
           <button class="hamburger-menu-catalog-button" type="button">
             <div class="hamburger-menu-catalog-button__text">Каталог</div>
@@ -500,8 +523,30 @@
     <main class="main">
       <div class="container">
         <div class="user-content">
-					<div class="work_area">
-                <hr> 			Заголовки: 
+          <h3>Перейти</h3>
+          <ul class="links-anchors">
+            <li><a href="#anc1">>>> Заголовки</a></li>
+            <li><a href="#anc2">>>> кнопки</a></li>
+            <li><a href="#anc3">>>> ol</a></li>
+            <li><a href="#anc4">>>>  ul</a></li>
+            <li><a href="#anc5">>>> table</a></li>
+            <li><a href="#anc6">>>>  form</a></li>
+            <li><a href="#anc7">>>> Слайдеры</a></li>
+            <li><a href="#anc8">>>>  Пагинация</a></li>
+            <li><a href="#anc9">>>>  Каталог товаров</a></li>
+            <li><a href="#anc10">>>>  Категория</a></li>
+            <li><a href="#anc11">>>>  Табы</a></li>
+            <li><a href="#anc12">>>>  Свойства</a></li>
+            <li><a href="#anc13">>>>  Бренды</a></li>
+            <li><a href="#anc14">>>>  Сортировка</a></li>
+            <li><a href="#anc15">>>>  Текстовые блоки</a></li>
+            <li><a href="#anc16">>>>  Баннер</a></li>
+            <li><a href="#anc17">>>>  Консультация</a></li>
+          </ul>
+          <br>
+                <hr> 			
+                <br>
+                <h2 id="anc1">Заголовки: </h2>
             <br>
             
             <br>
@@ -587,9 +632,8 @@
             <p> 			&lt;p&gt;</p>
             
             <p>Donec semper fermentum aliquam. <img src="assets/img/nophoto.png">Proin pretium diam ut leo volutpat pharetra. Quisque quis diam eu odio congue mattis. Duis pretium suscipit metus, sit amet pharetra mauris ornare vel. <a href="#">Fusce non pulvinar sapien</a>. Nullam est sapien, consequat vel posuere quis, ornare at lectus non pulvinar sapien. <a href="#">Nullam est sapien</a>, consequat vel posuere quis,<img src="assets/img/nophoto.png"> ornare at lectus. Fusce non pulvinar sapien. </p>
-            <hr> 	<h2>		Список не нумерованый №1: </h2>
             <br>
-            
+            <hr> 	<h2  id="anc4">Список не нумерованый №1: </h2>
             <br>
                   
             <ul> 				 
@@ -602,12 +646,28 @@
               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
                     
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </li>
+                  </ul>
+              </li>
                     
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  </ul>
+            </ul>
             
             <br>
-            <hr> 		<h2>	Список нумерованый №4: </h2>
+            <hr> 		<h2  id="anc3">	Список нумерованый №4: </h2>
             <br>
             
             <br>
@@ -622,8 +682,10 @@
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  </ol>
-                  
+                </ol>
+                <br>
+              <h2 id="anc5">Таблицы</h2>
+              <br>
             <table width="100%"> 				 
               <tbody> 
                 <tr><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th><th>Колонка 5</th></tr>
@@ -660,8 +722,397 @@
                     </tbody>
             </table>
 
+            <br>
+            <br>
+            <h2 id="anc2">Кнопки</h2>
+            <br>
+            <button class="button" data-modal-id="modal-project" data-modal-url="assets/modals/modal-3d.html">Заказать бесплатный 3D дизайн-проект</button>
+            <br>
+            <button class="button" data-modal-id="modal-project" data-modal-url="assets/modals/modal-callback.html">Заказать</button>
+            <br>
+
+            <h2>Карточка продукта</h2>
+            <br>
+            <div class="row-catalog">
+              <div class="col-catalog">
+                <div class="item-catalog">
+                  <div class="labels-wrap">
+                    <div class="item-label item-label_sale">-20%</div>
+                    <div class="item-label item-label_hit">Хит</div>
+                  </div>
+                  <div class="item-catalog__brand">
+                    <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                  </div>
+                  <a href="#" class="item-catalog__image">
+                    <img src="assets/img/catalog1.jpg" alt="alt">
+                  </a>
+                  <div class="item-catalog__content">
+                    <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                    <div class="item-catalog__features">
+                      <p>Страна: <strong>Германия</strong></p>
+                      <p>Производитель: <strong>Kronotex</strong></p>
+                      <p>Класс: <strong>33</strong></p>
+                      <p>Толщина, мм: <strong>10</strong></p>
+                    </div>
+                    <div class="item-catalog__prices">
+                      <div class="price-main">936 ₽/шт</div>
+                      <div class="price-old">1 170 ₽/шт</div>
+                    </div>
+                  </div>
+                  <div class="item-catalog__info">
+                    <a href="#" class="button">Рассчитать стоимость</a>
+                    <a href="#" class="link-card"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <br><br><br><br>
+            <br>
+            <h2>Карточка коллекции</h2>
+            <br>
+            <div class="row-catalog">
+              <div class="col-catalog">
+                <div class="item-catalog item-catalog_collection">
+                  <a href="#" class="item-catalog__image">
+                    <img src="assets/img/catalog2.jpg" alt="alt">
+                  </a>
+                  <div class="item-catalog__content">
+                    <div class="item-catalog__subtitle">Коллекция</div>
+                    <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <h2 class="title" id="anc7">Слайдер коллекции</h2>
+          <div class="slider-catalog">
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog1.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog2.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog3.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Royal</strong></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog4.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Bona</strong></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog1.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img src="assets/img/catalog2.jpg" alt="alt">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <h2>Слайдер продукта</h2>
+          <br>
+          <div class="row-product">
+            <div class="col-slider-product">
+                <div class="slider-for">
+                  <div>
+                    <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
+                      <img src="assets/img/for1.jpg" alt="alt">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
+                      <img src="assets/img/for2.jpeg" alt="alt">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
+                      <img src="assets/img/for1.jpg" alt="alt">
+                    </a>
+                  </div>
+                  <div>
+                    <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
+                      <img src="assets/img/for2.jpeg" alt="alt">
+                    </a>
+                  </div>
+                </div>
+                <div class="slider-nav">
+                  <div>
+                    <div class="slider-nav__item">
+                      <img src="assets/img/for1.jpg" alt="alt">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="slider-nav__item">
+                      <img src="assets/img/for2.jpeg" alt="alt">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="slider-nav__item">
+                      <img src="assets/img/for1.jpg" alt="alt">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="slider-nav__item">
+                      <img src="assets/img/for2.jpeg" alt="alt">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <h2>Слайдер карточки</h2>
+          <br>
+          <div class="wrapper-card">
+            <div class="col-card">
+              <div class="slider-card">
+                <div>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </div>
+                <div>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </div>
+                <div>
+                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
+                    <img src="assets/img/slide_card1.jpg" alt="alt">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-card"></div>
+          </div>
+          <br>
+          <h2 class="title" id="anc9">Каталог товаров</h2>
+            <ul class="list-catalog">
+              <li>
+                <a href="#">Керамическая плитка <span>(3008)</span></a>
+                <ul>
+                  <li><a href="#">Для ванной <span>(2778)</span></a></li>
+                  <li><a href="#">Для кухни <span>(318)</span></a></li>
+                  <li><a href="#">Для пола <span>(112)</span></a></li>
+                  <li><a href="#">Строительная плитка <span>(5)</span></a></li>
+                  <li><a href="#">Для фасада <span>(11)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <h2 id="anc10">Категория</h2>
+            <br>
+            <div class="row-categories">
+              <div class="col-category">
+                <a href="#" class="item-category">
+                  <span class="item-category__image">
+                    <img src="assets/img/category1.jpg" alt="alt">
+                  </span>
+                  <span class="item-category__title">Ламинат <span class="item-category__value">18</span></span>
+                </a>
+              </div>
+            </div>
+            <br>
+            <h2 id="anc16">Баннер</h2>
+            <br>
+            <a href="#" class="banner-page">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="assets/img/banner1_mob.jpg">
+                <img src="assets/img/banner1.jpg" alt="alt">
+              </picture>
+            </a>
+            <h2 id="anc11">Табы</h2>
+            <br>
+            <ul class="tabs-product">
+              <li class="active"><a href="#tab_about1">Характеристики</a></li>
+              <li><a href="#tab_about2">Отзывы</a></li>
+            </ul>
+            <br>
+            <h2 id="anc12">Свойства</h2>
+            <br>
+            <div class="feature">
+              <span>Область применения</span>
+              <span>Для ванной</span>
+            </div>
+            <div class="feature">
+              <span>Категория</span>
+              <span>Плитка</span>
+            </div>
+            <div class="feature">
+              <span>Цвет</span>
+              <span>Серый</span>
+            </div>
+            <div class="feature">
+              <span>Производитель	</span>
+              <span>Laparet</span>
+            </div>
+            <div class="feature">
+              <span>Страна производства	</span>
+              <span>Россия</span>
+            </div>
+            <br>
+            <a href="#" class="link-about-product">
+              <img src="assets/img/ic_about_product.svg" alt="alt">
+              <span class="link-about-product__text">
+                <span><strong>Как сэкономить</strong> с помощью услуги <strong>«3D дизайн-проект»</strong>?</span>
+              </span>
+            </a>
+            <br>
+            <h2 id="anc6">Элементы формы</h2>
+            <br>
+           <div class="row-products">
+            <div class="col-sidebar">
+              <div class="range-catalog">
+                <div class="range-controls">
+                  <div class="input-range">
+                    <span>от</span>
+                    <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                  </div>
+                  <div class="input-range">
+                    <span>до</span>
+                    <input type="text" maxlength="4" max="5000" value="5000" class="control-input control-input__to" />
+                  </div>
+                </div>
+                <input type="text" class="range-catalog__input" name="my_range" value="" />
+              </div>
+              <br>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" checked/>
+                  <span>Для ванной <strong>(307)</strong></span>
+                </label>
+              </div>
+              <br>
+              <input class="call-modal__input" type="text" placeholder="Ваше имя*" minlength="3" required />
+              <br>
+              <button class="call-modal__button" type="submit">Отправить</button>
+            </div>
+           </div>
+           <br>
+           <h2 id="anc8">Пагинация</h2>
+           <div class="pagination">
+            <a href="#" class="pagination__item pagination__item_active">1</a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item">4</a>
+            <a href="#" class="pagination__item"><i class="far fa-chevron-right"></i></a>
+          </div>
+          <br>
+          <h2 id="anc13">Бренды</h2>
+          <br>
+          <div class="product-brands">
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product1.jpg" alt="alt">
+              <span>Alsafloor</span>
+            </a>
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product2.jpg" alt="alt">
+              <span>Kaindl</span>
+            </a>
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product3.jpg" alt="alt">
+              <span>Kronopol</span>
+            </a>
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product4.jpg" alt="alt">
+              <span>Kronotex</span>
+            </a>
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product5.png" alt="alt">
+              <span>Pergo</span>
+            </a>
+            <a href="#" class="unit-brand">
+              <img src="assets/img/brand_product6.jpg" alt="alt">
+              <span>Quick Step</span>
+            </a>
+          </div>
+          <br>
+          <h2 id="anc14">Сортировка</h2>
+          <br>
+          <div class="sorting-catalog">
+            <strong>Сортировать по:</strong>
+            <a href="#" class="active">Цена</a>
+            <a href="#">Популярность</a>
+            <a href="#">Новинки</a>
+            <a href="#">По алфавиту</a>
+          </div>
+
+          <br>
+          <h2 id="anc15">Текстовые блоки</h2>
+          <div class="info-boxes">
+            <div class="box-info">
+              <h2>Керамическая плитка ТЕССЕР: облицовка стен от лучших российских и европейских производителей. Материалы любых размеров и цветов</h2>
+              <p>Керамическая и кафельная плитка – самый практичный, износостойкий и красивый отделочный материал, который широко применяется для отделки полов и стен в помещениях различного назначения. Сегодня такую облицовку успешно используют не только при отделке кухонь и ванных комнат. Плитку успешно применяют для обустройства фасадов, мансард, террас, прихожих, а также жилых комнат и помещений коммерческого назначения. Эксплуатационные характеристики покрытия всегда находятся на высочайшем уровне: плитка имеет долгий срок службы, устойчива к воздействию влаги и перепадам температурных режимов, механическим нагрузкам, она не вступает в контакт с химическими средствами и абсолютно гигиенична.</p>
+            </div>
+            <div class="box-info">
+              <h3>Многообразие керамической плитки</h3>
+              <p>Керамическая плитка привлекает разнообразием предлагаемых решений в дизайне. Современные производители предлагают купить кафель практически любых цветов и размеров, с необычными декоративными элементами и стильными бордюрами, которые помогут в реализации лаконичного и необычного дизайн-проекта. Предложены потребителям и тематические коллекции, позволяющие легко создать в ванной комнате восточный, морской или флористический стиль с учетом всех индивидуальных пожеланий. Особое внимание привлекают модели плитки, которые имитируют поверхность древесины ценных пород, ткани, кожи, металла, мрамора, природного камня. В подобном исполнении представлена как напольная плитка, так и плитка для стен, что раскрывает новые возможности в применении керамики. Такие покрытия можно увидеть в гостиной, кабинете, коридоре, прихожей, а также в спальне.</p>
+            </div>
+            <div class="box-info">
+              <h3>ТЕССЕР: купить плитку по выгодной цене!</h3>
+              <p>В ТЕССЕР вы сможете подобрать керамическую плитку практически всех европейских и российских производителей по лучшей цене. В ассортименте представлена как изысканная облицовка польских, испанских, итальянских марок, так и демократичные по стоимости модели плитки российских брендов высокого качества. Весь товар всегда представлен на складе компании, что позволяет легко выбрать и получить необходимую плитку, не затягивая процесс ремонта надолго. В каталоге вы сможете получить основную информацию обо всех представленных в ассортименте коллекциях настенной и напольной плитки, ее размерах, цветовых исполнениях и технических характеристиках, подобрав подходящие по всем критериям материалы на любой бюджет.</p>
+            </div>
+          </div>
+            <br>
+            
+            <section class="callback-product" id="anc17">
+              <div class="container">
+                <div class="callback">
+                  <h2 class="callback__title">Позвоните нам - мы создадим Дизайн-проект для Вас <strong>В ПОДАРОК!</strong></h2>
+                  <a href="tel:+78009997700" class="callback__phone">
+                    <i class="fa fa-phone-alt"></i>
+                    <b>+7 800 999 77 00</b>
+                  </a>
+                  <button class="button" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">Оставить заявку</button>
+                </div>
+              </div>
+            </section>
+            <br><br>
  					</div>
       </div>
     </main>

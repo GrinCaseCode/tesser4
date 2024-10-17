@@ -369,23 +369,36 @@
         <div class="hamburger-menu__backdrop"></div>
         <div class="hamburger-menu__wrapper">
           <div class="hamburger-menu-search__wrapper">
-            <form class="hamburger-menu-search">
-              <input
-                class="hamburger-menu-search__control"
-                type="search"
-                name="query"
-                placeholder="Поиск по сайту..."
-                required
-              />
-              <button class="hamburger-menu-search-button" type="submit">
-                <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
-                  />
-                </svg>
-              </button>
-            </form>
+            <div class="search-main">
+              <form class="hamburger-menu-search">
+                <input
+                  class="hamburger-menu-search__control"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту..."
+                  required
+                />
+                <button class="hamburger-menu-search-button" type="submit">
+                  <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div class="search-results">
+                <div class="search-results__list">
+                  <a href="#" class="search-results__item"><b>Лам</b>инат</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-берёза</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-серый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-бежевый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-коричневый</a>
+                </div>
+                <a href="#" class="search-results__all">Все результаты <i class="far fa-angle-right"></i></a>
+              </div>
+            </div>
           </div>
           <button class="hamburger-menu-catalog-button" type="button">
             <div class="hamburger-menu-catalog-button__text">Каталог</div>

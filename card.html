@@ -366,23 +366,36 @@
         <div class="hamburger-menu__backdrop"></div>
         <div class="hamburger-menu__wrapper">
           <div class="hamburger-menu-search__wrapper">
-            <form class="hamburger-menu-search">
-              <input
-                class="hamburger-menu-search__control"
-                type="search"
-                name="query"
-                placeholder="Поиск по сайту..."
-                required
-              />
-              <button class="hamburger-menu-search-button" type="submit">
-                <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
-                  />
-                </svg>
-              </button>
-            </form>
+            <div class="search-main">
+              <form class="hamburger-menu-search">
+                <input
+                  class="hamburger-menu-search__control"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту..."
+                  required
+                />
+                <button class="hamburger-menu-search-button" type="submit">
+                  <svg class="hamburger-menu-search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div class="search-results">
+                <div class="search-results__list">
+                  <a href="#" class="search-results__item"><b>Лам</b>инат</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-берёза</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Kronopol 3552-серый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-бежевый</a>
+                  <a href="#" class="search-results__item"><b>Лам</b>инированный плинтус Pergo 03371-коричневый</a>
+                </div>
+                <a href="#" class="search-results__all">Все результаты <i class="far fa-angle-right"></i></a>
+              </div>
+            </div>
           </div>
           <button class="hamburger-menu-catalog-button" type="button">
             <div class="hamburger-menu-catalog-button__text">Каталог</div>
@@ -505,23 +518,23 @@
         <div class="container">
           <div class="wrapper-card">
             <div class="col-card">
-              <ul class="slider-card">
-                <li>
+              <div class="slider-card">
+                <div>
                   <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
                     <img src="assets/img/slide_card1.jpg" alt="alt">
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
                     <img src="assets/img/slide_card1.jpg" alt="alt">
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
                     <img src="assets/img/slide_card1.jpg" alt="alt">
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <div class="col-card">
                 <h1 class="title-card">Agat</h1>
@@ -912,8 +925,8 @@
             <p>Как легко догадаться по названию, <strong>коллекция Agat</strong> воспроизводит рисунок агата. На керамической плитке изображены завораживающие своей красотой слои минерала с плавными переходами оттенков. Настенная плитка представлена в трёх утончённых цветах – кофейном, светлом и сером. Агат не требует броских украшений, поэтому декоры только добавляют необходимые акценты. Псевдомозаика представляет собой разнонаправленные слои минерала. Декор Lines с контрастными линиями добавит ритмичность и динамику в интерьер. Модуль Geo покрыт геометрическим орнаментом в шахматном стиле, но вместо чёрно-белых квадратов на плитке изображены ромбы с рисунком агата и полосатым узором.</p>
           </div>
           <h2 class="title" id="anchor3">Популярные коллекции</h2>
-          <ul class="slider-catalog">
-            <li>
+          <div class="slider-catalog">
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog1.jpg" alt="alt">
@@ -923,8 +936,8 @@
                   <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog2.jpg" alt="alt">
@@ -934,8 +947,8 @@
                   <a href="#" class="item-catalog__title"><strong>Village</strong></a>
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog3.jpg" alt="alt">
@@ -945,8 +958,8 @@
                   <a href="#" class="item-catalog__title"><strong>Royal</strong></a>
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog4.jpg" alt="alt">
@@ -956,8 +969,8 @@
                   <a href="#" class="item-catalog__title"><strong>Bona</strong></a>
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog1.jpg" alt="alt">
@@ -967,8 +980,8 @@
                   <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div>
               <div class="item-catalog item-catalog_collection">
                 <a href="#" class="item-catalog__image">
                   <img src="assets/img/catalog2.jpg" alt="alt">
@@ -978,8 +991,8 @@
                   <a href="#" class="item-catalog__title"><strong>Village</strong></a>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
