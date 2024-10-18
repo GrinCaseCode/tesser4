@@ -17,3 +17,11 @@
 .button:active {
   background-color: color-mix(in srgb, var(--color-accent) 90%, black);
 }
+.button_outline {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+}
+.button_outline:hover {
+  color: #fff;
+}

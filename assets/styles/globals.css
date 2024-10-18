@@ -26,3 +26,14 @@ body {
 .main {
   font-size: 14px;
 }
+
+.item-form input {
+  padding: 10px 15px;
+  width: 100%;
+  color: #808080;
+  border: 1px solid var(--color-border-primary);
+  transition: border-color 200ms ease-in-out;
+}
+.item-form input:focus {
+  border-color: var(--color-accent);
+}
