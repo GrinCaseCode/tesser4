@@ -27,6 +27,8 @@ body {
   font-size: 14px;
 }
 
+.item-form .jq-selectbox__select-text,
+.item-form textarea,
 .item-form input {
   padding: 10px 15px;
   width: 100%;
@@ -34,6 +36,74 @@ body {
   border: 1px solid var(--color-border-primary);
   transition: border-color 200ms ease-in-out;
 }
+.item-form textarea:focus,
 .item-form input:focus {
   border-color: var(--color-accent);
+}
+.item-form .jq-selectbox {
+  display: block;
+  width: 100%;
+  z-index: 5 !important;
+}
+.item-form .jq-selectbox__select-text {
+  cursor: pointer;
+}
+.item-form .jq-selectbox__dropdown {
+  top: 100% !important;
+  left: 0;
+  bottom: auto !important;
+  background: #fff;
+  width: 100% !important;
+  padding: 0;
+  border: 1px solid var(--color-border-primary);
+}
+.item-form .jq-selectbox__dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+.item-form .jq-selectbox__trigger {
+	width: 19px;
+	height: 19px;
+	font-size: 12px;
+	right: 15px;
+	color: #333;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 300;
+}
+.item-form .jq-selectbox__trigger:before {
+	content: "\f078";
+}
+.item-form .jq-selectbox__dropdown li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.item-form label {
+  padding-bottom: 7px;
+  color: #000;
+  font-weight: 400;
+  display: block;
+  font-size: 14px;
+}
+.item-form label span {
+  color: #d93333;
+}
+.item-form textarea {
+  height: 70px;
+}
+.item-form_custom textarea {
+  resize: none;
 }
