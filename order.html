@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="assets/styles/layouts/header.css?ver=1.12" />
     <link rel="stylesheet" href="assets/styles/layouts/footer.css?ver=1.12" />
     <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.12" />
-    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.12" />
-    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.12" />
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.12" />
 
     <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.12" />
@@ -26,21 +24,22 @@
     <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.12" /> 
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.12" />
     <link rel="stylesheet" href="assets/styles/components/quantity.css?ver=1.12" />
+    <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.12" />
     <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.12" />
-    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.12" />
 
-
-    <link rel="stylesheet" href="assets/styles/product.css?ver=1.12" />
+ 
+    <link rel="stylesheet" href="assets/styles/basket.css?ver=1.12" />
+    <link rel="stylesheet" href="assets/styles/order.css?ver=1.12" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.12"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.12"></script>
     <script src="assets/scripts/components/fancybox.js?ver=1.12"></script>
     <script src="assets/scripts/lib/mask/jquery.maskedinput.js?ver=1.12"></script>
-    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.12"></script>
+    <script src="assets/scripts/lib/jQueryFormStyler-master/jquery.formstyler.min.js?ver=1.12"></script>
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.12"></script>
+    <script src="assets/scripts/components/order.js?ver=1.12"></script>
     <script src="assets/scripts/components/header.js?ver=1.12"></script>
     <script src="assets/scripts/components/modal.js?ver=1.12"></script>
-    <script src="assets/scripts/components/product.js?ver=1.12"></script>
     <script src="assets/scripts/components/quntity.js?ver=1.12"></script>
   </head>
   <body>
@@ -503,271 +502,399 @@
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Керамическая плитка</a>
+      <a class="breadcrumbs__item" href="">Личный кабинет</a>
       <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Для ванной</a>
+      <a class="breadcrumbs__item" href=""> Мои заказы </a>
       <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Коллекция Agat (Laparet, Россия)</a>
-      <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">Agat Плитка настенная серый 60082 20х60</span>
+      <span class="breadcrumbs__item">Оформление заказа</span>
     </section>
 
     <main class="main">
-      <section class="page-product">
-          <div class="container">
-            <h1>Agat Плитка настенная серый 60082 20х60</h1>
-            <div class="row-product">
-              <div class="col-slider-product">
-                  <div class="slider-for">
-                    <div>
-                      <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
-                        <img src="assets/img/for1.jpg" alt="alt">
-                      </a>
+      <section class="page-basket page-basket_order">
+        <div class="container">
+          <h1 class="title">Оформление заказа</h1>
+          <div class="row-basket">
+            <div class="col-basket-main">
+                <div class="block-order active">
+                  <div class="block-order__head"><div class="block-order__count"></div> Контактные данные <a href="#" class="edit-order">изменить</a></div>
+                  <div class="block-order__content">
+                    <div class="item-form">
+                      <label><span>*</span> Ф.И.О.</label>
+                      <div class="alert-input">Поле "Ф.И.О." обязательно для заполнения</div>
+                      <input type="text" required="required">
                     </div>
-                    <div>
-                      <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
-                        <img src="assets/img/for2.jpeg" alt="alt">
-                      </a>
+                    <div class="item-form">
+                      <label><span>*</span> E-Mail</label>
+                      <div class="alert-input">Поле "E-Mail" обязательно для заполнения</div>
+                      <input type="email" placeholder="example@example.ru" required="required">
                     </div>
-                    <div>
-                      <a href="assets/img/for1.jpg" class="slider-for__item fancybox" data-fancybox="product">
-                        <img src="assets/img/for1.jpg" alt="alt">
-                      </a>
+                    <div class="item-form">
+                      <label><span>*</span>  Телефон</label>
+                      <div class="alert-input">Поле "Телефон" обязательно для заполнения</div>
+                      <input type="tel" required="required" class="input-phone" placeholder="+7 (999) 999 99 99" inputmode="numeric">
                     </div>
-                    <div>
-                      <a href="assets/img/for2.jpeg" class="slider-for__item fancybox" data-fancybox="product">
-                        <img src="assets/img/for2.jpeg" alt="alt">
-                      </a>
+                    <div class="item-form">
+                      <label><span>*</span> Адрес доставки</label>
+                      <div class="alert-input">Поле "Адрес доставки" обязательно для заполнения</div>
+                      <textarea required="required"></textarea>
                     </div>
-                  </div>
-                  <div class="title-gallery">Варианты рисунков <div class="tooltip-main" data-tile-tooltip="Для того, чтобы поверхность была натуральной и разнообразной, у плитки существует несколько вариантов рисунка">i</div></div>
-                  <div class="slider-nav">
-                    <div>
-                      <div class="slider-nav__item">
-                        <img src="assets/img/for1.jpg" alt="alt">
-                      </div>
+                    <div class="item-form item-form_custom">
+                      <label>Комментарии к заказу:</label>
+                      <textarea></textarea>
                     </div>
-                    <div>
-                      <div class="slider-nav__item">
-                        <img src="assets/img/for2.jpeg" alt="alt">
-                      </div>
-                    </div>
-                    <div>
-                      <div class="slider-nav__item">
-                        <img src="assets/img/for1.jpg" alt="alt">
-                      </div>
-                    </div>
-                    <div>
-                      <div class="slider-nav__item">
-                        <img src="assets/img/for2.jpeg" alt="alt">
-                      </div>
+                    <div class="block-order__buttons">
+                      <button class="button next-order">Далее</button>
                     </div>
                   </div>
-              </div>
-              <div class="col-info-product">
-                <div class="head-product">
-                  <div class="item-product-info">
-                    <div class="item-product-info__wrap">
-                      <div class="item-product-info__flag">
-                        <img src="assets/img/gm.png" alt="alt">
-                      </div>
-                    </div>
-                    <span>Германия</span>
-                  </div>
-                  <div class="item-product-info">
-                    <div class="item-product-info__wrap">
-                      <div class="item-product-info__logo">
-                        <img src="assets/img/logo_manufacture1.jpeg" alt="alt">
-                      </div>
-                    </div>
-                    <span>Kronotex</span>
-                  </div>
-                  <div class="item-product-info">
-                    <div class="item-product-info__wrap">
-                      <div class="item-product-info__icon">
-                        <img src="assets/img/layer.svg" alt="alt">
-                      </div>
-                    </div>
-                    <span>Коллекция Mammut</span>
-                  </div>
-                  <div class="product-key">ID: <strong>106841</strong></div>
                 </div>
-                <div class="row-product">
-                  <div class="col-half-product">
-                    <div class="content-product">
-                      <div class="title-price">Цена</div>
-                      <div class="price-main">1 290 ₽/м<sup>2</sup></div>
-                      <hr>
-                      <div class="title-price">Общая стоимость</div>
-                      <div class="price-main">154.80₽</div>
+                <div class="block-order">
+                  <div class="block-order__head"><div class="block-order__count"></div> Регион доставки <a href="#" class="edit-order">изменить</a></div>
+                  <div class="block-order__content">
+                    <div class="item-form">
+                      <label>Тип плательщика</label>
+                      <div class="alert-input">Поле обязательно для заполнения</div>
+                      <select>
+                        <option value="1">Физическое лицо</option>
+                        <option value="2">Юридическое лицо</option>
+                      </select>
+                    </div>
+                    <div class="item-form">
+                      <label><span>*</span> Местоположение</label>
+                      <div class="alert-input">Поле "Местоположение" обязательно для заполнения</div>
+                      <div class="item-select">
+                        <div class="item-select__value">
+                          <i class="far fa-search"></i>
+                          <i class="fas fa-times-circle"></i>
+                          <div class="item-select__text">Россия</div>
+                          <input type="text" value="Россия" required>
+                        </div>
+                        <div class="item-select__dropdown">
+                          <ul>
+                            <li>Россия</li>
+                            <li>Китай</li>
+                            <li>Беларусь</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-form">
+                      <label><span>*</span> Индекс</label>
+                      <div class="alert-input">Поле обязательно для заполнения</div>
+                      <input type="text" required="required" value="101000">
+                    </div>
+                    <div class="descr-order">Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"</div>
+                    <div class="block-order__buttons">
+                      <button class="button button_outline prev-order">Назад</button>
+                      <button class="button next-order">Далее</button>
                     </div>
                   </div>
-                  <div class="col-half-product">
-                    <div class="content-product">
-                      <div class="product-availability">Склад в <a href="#">г.Подольск</a></div>
-                      <div class="product-actions">
-                        <div class="tab-container-quantity">
-                          <div class="tab-pane-quantity" data-quantity="quantity-1">
-                            <div class="quantity quantity_main">
-                              <div class="quantity-button quantity-down"><i class="fas fa-chevron-down"></i></div>
-                              <input type="number" min="1" value="1">
-                              <div class="quantity-button quantity-up"><i class="fas fa-chevron-up"></i></div>
+                </div>
+                <div class="block-order">
+                  <div class="block-order__head"><div class="block-order__count"></div> Способ доставки <a href="#" class="edit-order">изменить</a></div>
+                  <div class="block-order__content">
+                    <div class="row-order">
+                      <div class="col-order-checks">
+                        <div class="row-checks">
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="courier">
+                              <label>
+                                <input type="radio" name="radio-delivery" checked/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_delivery1.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Доставка курьером</span>
+                                  <span class="check-order__price">500 ₽</span>
+                                </span>
+                              </label>
                             </div>
                           </div>
-                          <div class="tab-pane-quantity" data-quantity="quantity-2">
-                            <div class="quantity quantity_square">
-                              <div class="quantity-button quantity-down"><i class="far fa-chevron-down"></i></div>
-                              <input type="number" min="0.12" value="0.12">
-                              <div class="quantity-button quantity-up"><i class="far fa-chevron-up"></i></div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="pickup">
+                              <label>
+                                <input type="radio" name="radio-delivery"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_delivery2.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Самовывоз</span>
+                                  <span class="check-order__price">0 ₽</span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                         </div>
-                        <div class="tabs-quantity">
-                          <div class="btn-tab-quantity active" data-tab-quantity="quantity-1"><span>шт</span></div>
-                          <div class="btn-tab-quantity" data-tab-quantity="quantity-2"><span>m<sup>2</sup></span></div>
+                      </div>
+                      <div class="col-order-info">
+                          <div class="info-checks">
+                            <div class="tab-checks" data-tab-check="courier">
+                              <div class="info-checks__title">Доставка курьером</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_delivery1.png" alt="alt">
+                              </div>
+                              <p>Доставка осуществляется в течение дня в удобное для вас время.</p>
+                              <div class="info-checks__descr">Стоимость:</div>
+                              <div class="info-checks__price">500 ₽</div>
+                            </div>
+                            <div class="tab-checks" data-tab-check="pickup">
+                              <div class="info-checks__title">Самовывоз</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_delivery2.png" alt="alt">
+                              </div>
+                              <p>Вы можете самостоятельно забрать заказ из нашего магазина.</p>
+                              <div class="info-checks__descr">Стоимость:</div>
+                              <div class="info-checks__price">0 ₽</div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="block-order__buttons">
+                      <button class="button button_outline prev-order">Назад</button>
+                      <button class="button next-order">Далее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-order">
+                  <div class="block-order__head"><div class="block-order__count"></div> Способ оплаты <a href="#" class="edit-order">изменить</a></div>
+                  <div class="block-order__content">
+                    <div class="row-order">
+                      <div class="col-order-checks">
+                        <div class="row-checks">
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="ymoney">
+                              <label>
+                                <input type="radio" name="radio-payment" checked/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment1.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">ЮMoney</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="cards">
+                              <label>
+                                <input type="radio" name="radio-payment"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment2.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Банковские карты</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="terminals">
+                              <label>
+                                <input type="radio" name="radio-payment"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment3.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Терминалы</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="cash">
+                              <label>
+                                <input type="radio" name="radio-payment"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment4.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Наличные курьеру</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="transfer">
+                              <label>
+                                <input type="radio" name="radio-payment"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment5.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Банковский перевод</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-check">
+                            <div class="check-order" data-value-check="cod">
+                              <label>
+                                <input type="radio" name="radio-payment"/>
+                                <span class="check-order__content">
+                                  <span class="check-order__image">
+                                    <img src="assets/img/check_payment6.png" alt="alt">
+                                  </span>
+                                  <span class="check-order__title">Наложенный платеж</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="product-buttons">
-                        <button class="button">Купить</button>
-                        <a href="#" class="link-product"><i class="fa fa-shopping-cart"></i><span>Купить в 1 клик</span></a>
+                      <div class="col-order-info">
+                          <div class="info-checks">
+                            <div class="tab-checks" data-tab-check="ymoney">
+                              <div class="info-checks__title">ЮMoney</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment1.png" alt="alt">
+                              </div>
+                              <p>Оплата производится в ЮMoney, через сервис ЮKassa. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.</p>
+                            </div>
+                            <div class="tab-checks" data-tab-check="cards">
+                              <div class="info-checks__title">Банковские карты</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment2.png" alt="alt">
+                              </div>
+                              <p>Оплата производится банковской картой через сервис ЮKassa. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.</p>
+                            </div>
+                            <div class="tab-checks" data-tab-check="terminals">
+                              <div class="info-checks__title">Терминалы</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment3.png" alt="alt">
+                              </div>
+                              <p>Оплата производится через Терминалы с использованием сервиса ЮKassa. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.</p>
+                            </div>
+                            <div class="tab-checks" data-tab-check="cash">
+                              <div class="info-checks__title">Наличные курьеру</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment4.png" alt="alt">
+                              </div>
+                              <p>Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</p>
+                            </div>
+                            <div class="tab-checks" data-tab-check="transfer">
+                              <div class="info-checks__title">Банковский перевод</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment5.png" alt="alt">
+                              </div>
+                            </div>
+                            <div class="tab-checks" data-tab-check="cod">
+                              <div class="info-checks__title">Наложенный платеж</div>
+                              <div class="info-checks__image">
+                                <img src="assets/img/check_payment6.png" alt="alt">
+                              </div>
+                              <p>Оплата производится в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="order-coupon">
+                      <div class="order-coupon__title">Применить купон:</div>
+                      <div class="order-coupon__line">
+                        <div class="item-form">
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-order__buttons">
+                      <button class="button button_outline prev-order">Назад</button>
+                      <button class="button next-order">Далее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-order">
+                  <div class="block-order__head"><div class="block-order__count"></div> Товары в заказе <a href="#" class="edit-order">изменить</a></div>
+                  <div class="orders-wrap">
+                    <div class="item-order">
+                      <a href="#" class="item-order__image">
+                        <img src="assets/img/order1.jpg" alt="alt">
+                      </a>
+                      <div class="item-order__content">
+                        <a href="#" class="item-order__title">Ламинат Pergo Original Exellence Classic Plank Ясень Нордик</a>
+                      </div>
+                      <div class="item-order__amount">1 шт</div>
+                      <div class="item-order__prices">
+                        <div>
+                          <div class="price-main">911.20 ₽</div>
+                          <div class="price-old">1 139 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-order">
+                      <a href="#" class="item-order__image">
+                        <img src="assets/img/order2.jpg" alt="alt">
+                      </a>
+                      <div class="item-order__content">
+                        <a href="#" class="item-order__title">Ковровая плитка Tarkett Galaxy Light 87386</a>
+                      </div>
+                      <div class="item-order__amount">1 шт</div>
+                      <div class="item-order__prices">
+                        <div>
+                          <div class="price-main">1 326 ₽</div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="block-order__content">
+                    
+                    <div class="block-order__buttons">
+                      <button class="button button_outline prev-order">Назад</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-order">
+                  <div class="row-order row-order_bottom">
+                    <div class="col-order-bottom">
+                      <div class="checkbox checkbox_order">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-order-bottom col-order-bottom_button">
+                      <button class="button complete-order">Оформить заказ</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-basket-sidebar">
+              <div class="sidebar-basket">
+                <div class="basket-checkout">
+                  <div class="row-checkout">
+                    <div class="col-checkout">
+                      <div class="basket-checkout__title">Сумма заказа:</div>
+                    </div>
+                    <div class="col-checkout">
+                      <div class="price-checkout">2 465 ₽</div>
+                    </div>
+                  </div>
+                  <div class="row-checkout">
+                    <div class="col-checkout">
+                      <div class="basket-checkout__title">Стоимость доставки:</div>
+                    </div>
+                    <div class="col-checkout">
+                      <div class="price-checkout">500 ₽</div>
+                    </div>
+                  </div>
+                  <div class="row-checkout">
+                    <div class="col-checkout">
+                      <div class="basket-checkout__title">Ваша скидка:</div>
+                    </div>
+                    <div class="col-checkout">
+                      <div class="price-checkout price-checkout_sale">227.80 ₽</div>
+                    </div>
+                  </div>
+                  <div class="row-checkout row-checkout_total">
+                    <div class="col-checkout">
+                      <div class="basket-checkout__title">Итого:</div>
+                    </div>
+                    <div class="col-checkout">
+                      <div class="price-checkout price-checkout_total">2 237.20 ₽</div>
+                    </div>
+                  </div>
+                  <button class="button complete-order">Оформить заказ</button>
                 </div>
               </div>
             </div>
-            <div class="row-product">
-              <div class="col-half-product">
-                <ul class="tabs-product">
-                  <li class="active"><a href="#tab_about1">Характеристики</a></li>
-                  <li><a href="#tab_about2">Отзывы</a></li>
-                </ul>
-                <div class="tab-container-product">
-                  <div class="tab-pane-product" id="tab_about1">
-                    <div class="feature">
-                      <span>Область применения</span>
-                      <span>Для ванной</span>
-                    </div>
-                    <div class="feature">
-                      <span>Категория</span>
-                      <span>Плитка</span>
-                    </div>
-                    <div class="feature">
-                      <span>Цвет</span>
-                      <span>Серый</span>
-                    </div>
-                    <div class="feature">
-                      <span>Производитель	</span>
-                      <span>Laparet</span>
-                    </div>
-                    <div class="feature">
-                      <span>Страна производства	</span>
-                      <span>Россия</span>
-                    </div>
-                    <div class="feature">
-                      <span>Дизайн</span>
-                      <span>Оникс</span>
-                    </div>
-                    <div class="feature">
-                      <span>Ширина</span>
-                      <span>60,00 см</span>
-                    </div>
-                    <div class="feature">
-                      <span>Высота</span>
-                      <span>20,00 см</span>
-                    </div>
-                    <div class="feature">
-                      <span>Поверхность</span>
-                      <span>Глянцевая</span>
-                    </div>
-                    <div class="feature">
-                      <span>Покрытие</span>
-                      <span>Глазурованная</span>
-                    </div>
-                    <div class="feature">
-                      <span>Ректифицированная</span>
-                      <span>Нет</span>
-                    </div>
-                    <div class="feature">
-                      <span>Материал</span>
-                      <span>Керамика</span>
-                    </div>
-                    <div class="feature">
-                      <span>Место в коллекции	</span>
-                      <span>Базовая плита</span>
-                    </div>
-                    <div class="feature">
-                      <span>Назначение</span>
-                      <span>Стена</span>
-                    </div>
-                    <div class="feature">
-                      <span>Артикул</span>
-                      <span>60082</span>
-                    </div>
-                    <div class="feature">
-                      <span>Базовая единица	</span>
-                      <span>м<sup>2</sup></span>
-                    </div>
-                    <div class="feature">
-                      <span>Коллекция</span>
-                      <span>Agat</span>
-                    </div>
-                    <div class="feature">
-                      <span>Коэффициент пересчета в метры	</span>
-                      <span>0.12</span>
-                    </div>
-                    <div class="feature">
-                      <span>Толщина</span>
-                      <span>0.9 см</span>
-                    </div>
-                    <div class="feature">
-                      <span>Бренд</span>
-                      <span>Laparet</span>
-                    </div>
-                    <div class="feature">
-                      <span>Вес</span>
-                      <span>14.74 кг</span>
-                    </div>
-                  </div>
-                  <div class="tab-pane-product" id="tab_about2">
-                    <a href="#" class="button">Добавить отзыв</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-half-product">
-                <a href="#" class="link-about-product">
-                  <img src="assets/img/ic_about_product.svg" alt="alt">
-                  <span class="link-about-product__text">
-                    <span><strong>Как сэкономить</strong> с помощью услуги <strong>«3D дизайн-проект»</strong>?</span>
-                  </span>
-                </a>
-                <div class="head-product-about">
-                  <div class="head-product-about__title">Коллекция Agat</div>
-                  <a href="#" class="button">Посмотреть всю коллекцию</a>
-                </div>
-                <div class="image-product-collection">
-                  <img src="assets/img/product_collection1.jpeg" alt="alt">
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="design-project">
-        <div class="container">
-          <h2 class="design-project__title">Подобрать отделочные материалы и сантехнику стало еще удобнее</h2>
-          <div class="design-project__descr">Подобрать отделочные материалы и сантехнику стало еще удобнее</div>
-          <a href="#" class="button">ЗАКАЗАТЬ ДИЗАЙН-ПРОЕКТ</a>
-        </div>
-      </section>
-      <section class="callback-product">
-        <div class="container">
-          <div class="callback">
-            <h2 class="callback__title">Позвоните нам - мы создадим Дизайн-проект для Вас <strong>В ПОДАРОК!</strong></h2>
-            <a href="tel:+78009997700" class="callback__phone">
-              <i class="fa fa-phone-alt"></i>
-              <b>+7 800 999 77 00</b>
-            </a>
-            <button class="button" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -808,7 +935,7 @@
       </div>
       <div class="footer__divider"></div>
       <div class="container">
-        <a class="footer__logotype" href="">ТЕССЕР</a>
+        <a class="footer__logotype" href="">ТЕССЕР</a> 
         <div class="footer__copyright">
           © 2024 ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита, сантехники.
         </div>
