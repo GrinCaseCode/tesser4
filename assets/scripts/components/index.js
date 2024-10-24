@@ -23,6 +23,7 @@ $(document).ready(function() {
     var selectTab = $(this).attr("href");
     $(selectTab).fadeIn(200);
     $('.tab-container-main .slider-catalog').slick('setPosition');
+    $('.tab-container-main .slider-catalog-main').slick('setPosition');
   });
 
 });

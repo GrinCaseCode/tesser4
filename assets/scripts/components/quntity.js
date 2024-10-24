@@ -7,7 +7,8 @@ $(document).ready(function () {
     $input.parent().removeClass("focused");
   });
 
-  $('.quantity-button').on('click', function() {
+
+  $(document).on('click', '.quantity-button', function() {
     var $button = $(this);
     var $input = $button.siblings('input[type="number"]');
     var currentValue = parseFloat($input.val());

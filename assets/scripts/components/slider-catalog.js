@@ -27,6 +27,8 @@ $(document).ready(function() {
 			]
 		});
 
+
+
 		$('.slider-catalog-main').slick({
 			arrows: true,
 			dots: false,
@@ -52,5 +54,32 @@ $(document).ready(function() {
 				]
 			});
 
+
+					// Функция для автоскроллинга
+	function startAutoScroll(slider, direction) {
+		return setInterval(function() {
+			if (direction === 'prev') {
+				slider.slick('slickPrev');
+			} else {
+				slider.slick('slickNext');
+			}
+		}, 20); // Интервал в 300 мс
+	}
+
+	let autoScrollInterval;
+
+	// Обработчик для кнопки "prev"
+	$('.slick-prev').on('mousedown', function() {
+		autoScrollInterval = startAutoScroll($('.slick-slider'), 'prev');
+	}).on('mouseup mouseleave', function() {
+		clearInterval(autoScrollInterval);
+	});
+
+	// Обработчик для кнопки "next"
+	$('.slick-next').on('mousedown', function() {
+		autoScrollInterval = startAutoScroll($('.slick-slider'), 'next');
+	}).on('mouseup mouseleave', function() {
+		clearInterval(autoScrollInterval);
+	});
 
 });

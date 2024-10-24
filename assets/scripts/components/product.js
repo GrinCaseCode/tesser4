@@ -27,14 +27,33 @@ $(document).ready(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 	});
 
-  $('.btn-tab-quantity').click(function(event) {
-    event.preventDefault();
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-    $(".tab-pane-quantity").fadeOut(0);
-    var selectTab = $(this).attr("data-tab-quantity");
-    $('.tab-pane-quantity[data-quantity="' + selectTab + '"]').fadeIn(0);
-  });
+  					// Функция для автоскроллинга
+	function startAutoScroll(slider, direction) {
+		return setInterval(function() {
+			if (direction === 'prev') {
+				slider.slick('slickPrev');
+			} else {
+				slider.slick('slickNext');
+			}
+		}, 20); // Интервал в 300 мс
+	}
+
+	let autoScrollInterval;
+
+	// Обработчик для кнопки "prev"
+	$('.slick-prev').on('mousedown', function() {
+		autoScrollInterval = startAutoScroll($('.slick-slider'), 'prev');
+	}).on('mouseup mouseleave', function() {
+		clearInterval(autoScrollInterval);
+	});
+
+	// Обработчик для кнопки "next"
+	$('.slick-next').on('mousedown', function() {
+		autoScrollInterval = startAutoScroll($('.slick-slider'), 'next');
+	}).on('mouseup mouseleave', function() {
+		clearInterval(autoScrollInterval);
+	});
+
 
   $(".tabs-product a").click(function (event) {
     event.preventDefault();
