@@ -213,6 +213,7 @@
   justify-content: center;
 }
 .modal-bottom {
+  font-size: 14px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
