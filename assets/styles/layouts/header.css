@@ -247,6 +247,15 @@ header ul {
   visibility: hidden;
   transition: opacity 150ms ease-in-out, visibility 150ms ease-in-out;
 }
+.header-cart-popup::before {
+  position: absolute;
+  display: block;
+  content: " ";
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
 .header-cart-popup_shown {
   opacity: 1;
   visibility: visible;
