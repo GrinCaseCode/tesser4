@@ -82,14 +82,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const cart = document.querySelector('.header-cart');
   const cartPopup = document.querySelector('.header-cart-popup');
 
+  // Показать popup при наведении на .header-cart
   cart.addEventListener('mouseenter', () => {
-    cart.classList.toggle('header-cart_expanded', true);
-    cartPopup.classList.toggle('header-cart-popup_shown', true);
+    cart.classList.add('header-cart_expanded');
+    cartPopup.classList.add('header-cart-popup_shown');
   });
 
-  cartPopup.addEventListener('mouseleave', () => {
-    cart.classList.toggle('header-cart_expanded', false);
-    cartPopup.classList.toggle('header-cart-popup_shown', false);
+  // Скрыть popup при уходе за пределы .header-cart
+  cart.addEventListener('mouseleave', (event) => {
+    // Проверяем, что курсор ушёл за пределы и не попадает на popup
+    if (!cart.contains(event.relatedTarget)) {
+      cart.classList.remove('header-cart_expanded');
+      cartPopup.classList.remove('header-cart-popup_shown');
+    }
   });
 });
 
