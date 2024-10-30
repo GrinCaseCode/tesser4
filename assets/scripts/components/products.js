@@ -1,6 +1,30 @@
 
 $(document).ready(function() {
 
+	const $listSidebar = $('.page-design-projects .list-sidebar');
+	const threshold = 5;
+
+	$listSidebar.each(function() {
+	  const $checkboxes = $(this).find('.checkbox');
+	  if ($checkboxes.length > threshold) {
+		const $showMoreBtn = $('<a href="#" class="show-more">Показать все</a>');
+		$(this).after($showMoreBtn);
+
+		$showMoreBtn.on('click', function(e) {
+		  e.preventDefault();
+		  const $currentListSidebar = $(this).prev('.list-sidebar');
+		  const $hiddenCheckboxes = $currentListSidebar.find('.checkbox:nth-child(n+5)');
+		  if ($hiddenCheckboxes.is(':visible')) {
+			$hiddenCheckboxes.slideUp();
+			$(this).text('Показать все');
+		  } else {
+			$hiddenCheckboxes.slideDown();
+			$(this).hide();
+		  }
+		});
+	  }
+	});
+
 	 /*range slider*/
 
    jQuery('.range-catalog').each(function() {
