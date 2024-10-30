@@ -25,7 +25,7 @@
 }
 .tabs-products__button {
   transition: all 0.3s;
-  cursor: pointer;
+  cursor: pointer; 
 }
 .tabs-products__button:hover,
 .tabs-products__button.active {
@@ -280,6 +280,22 @@
 .unit-sidebar__head,
 .btn-open-sidebar {
   display: none;
+}
+.page-brand,
+.page-design-projects {
+  padding-bottom: 50px;
+}
+.page-design-projects .col-products {
+  padding-top: 15px;
+}
+.page-design-projects .list-sidebar .checkbox:nth-child(n+5) {
+  display: none;
+}
+.title + .sorting-catalog {
+  margin-top: 20px;
+}
+.title + .row-products {
+  padding-top: 25px;
 }
 
 @media only screen and (max-width : 1200px) {
