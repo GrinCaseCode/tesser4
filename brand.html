@@ -16,34 +16,34 @@
     <link rel="stylesheet" href="assets/styles/layouts/header.css?ver=1.15" />
     <link rel="stylesheet" href="assets/styles/layouts/footer.css?ver=1.15" />
     <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.15" />
-    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.15" />
-    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/scripts/lib/ion.rangeSlider-master/css/ion.rangeSlider.min.css?ver=1.15" />
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.15" />
 
     <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.15" />
     <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.15" />
     <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.15" />
-    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.15" /> 
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/components/pagination.css?ver=1.15" />
     <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.15" />
-    <link rel="stylesheet" href="assets/styles/components/slider-catalog.css?ver=1.15" />
-    <link rel="stylesheet" href="assets/styles/components/quantity.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/components/checkbox.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/components/callback.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/components/quantity.css?ver=1.15" /> 
 
 
-    <link rel="stylesheet" href="assets/styles/card.css?ver=1.15" />
+    <link rel="stylesheet" href="assets/styles/products.css?ver=1.15" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.15"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.15"></script>
     <script src="assets/scripts/components/fancybox.js?ver=1.15"></script>
     <script src="assets/scripts/lib/mask/jquery.maskedinput.js?ver=1.15"></script>
-    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.15"></script>
+    <script src="assets/scripts/lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.15"></script>
     <script src="assets/scripts/components/header.js?ver=1.15"></script>
     <script src="assets/scripts/components/modal.js?ver=1.15"></script>
-    <script src="assets/scripts/components/card.js?ver=1.15"></script>
     <script src="assets/scripts/components/quntity.js?ver=1.15"></script>
     <script src="assets/scripts/components/product-card.js?ver=1.15"></script>
-    <script src="assets/scripts/components/slider-catalog.js?ver=1.15"></script>
+    <script src="assets/scripts/components/products.js?ver=1.15"></script>
   </head>
   <body>
     <header class="header">
@@ -505,188 +505,584 @@
     <section class="breadcrumbs container">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Коллекции</a>
-      <span class="breadcrumbs__separator">/</span>
-      <a class="breadcrumbs__item" href="">Керамическая плитка</a>
-      <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">Agat</span>
+      <span class="breadcrumbs__item">Laparet</span>
     </section>
 
     <main class="main">
-      <section class="page-card">
+      <section class="page-brand">
         <div class="container">
-          <div class="wrapper-card">
-            <div class="col-card">
-              <div class="slider-card">
-                <div>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </div>
-                <div>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </div>
-                <div>
-                  <a href="assets/img/slide_card1.jpg" class="slider-card__item fancybox">
-                    <img src="assets/img/slide_card1.jpg" alt="alt">
-                  </a>
-                </div>
+          <h1 class="title">Laparet</h1>
+          <div class="row-products">
+            <div class="col-products">
+              <div class="product-brands">
+                <a href="#" class="unit-brand">
+                  <img src="assets/img/brand_product1.jpg" alt="alt">
+                  <span>Laparet</span>
+                </a>
               </div>
-            </div>
-            <div class="col-card">
-                <h1 class="title-card">Super Panda</h1>
-                <div class="price-info">Товар снят с производства</div>
-                <div class="card-discontinued">
-                  <p>Позвоните нам <a href="tel:84954920359">8 (495) 492-03-59</a></p>
-                  <p>Или <a href="#" data-modal-id="call" data-modal-url="assets/modals/modal-callback.html">закажите обратный звонок</a> чтобы подобрать аналог</p>
-                </div>
-                <button class="button button_analog" data-modal-id="modal-analog"  data-modal-url="assets/modals/modal-analog.html">Подобрать аналог</button>
-                <div class="card-advantages">
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M2.19 7.44a1.46 1.46 0 1 1 2.527 1.464A1.46 1.46 0 0 1 2.19 7.44ZM7.49 2.13a1.45 1.45 0 1 1 1.434 2.52A1.45 1.45 0 0 1 7.49 2.13ZM12.58 7.26V14a3.39 3.39 0 0 0 3.39 3.39h5.8v-2.9H16a.49.49 0 0 1-.49-.49V7.23l-2.93.03Z"></path>
-                            <path d="M15 0h-1.45v2.9H15A12.1 12.1 0 1 1 2.9 15v-1.45H0V15A15 15 0 1 0 15 0Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Дизайн-проект <br><strong>бесплатно за 1 час.</strong></div>
-                  </div>
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 28 30" width="28" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M24.37 30H3.63A3.621 3.621 0 0 1 0 26.38V3.62A3.62 3.62 0 0 1 3.63 0h20.74A3.63 3.63 0 0 1 28 3.62v22.76A3.63 3.63 0 0 1 24.37 30ZM3.63 3.1a.52.52 0 0 0-.52.52v22.76a.52.52 0 0 0 .52.52h20.74a.52.52 0 0 0 .52-.52V3.62a.52.52 0 0 0-.52-.52H3.63Z"></path>
-                            <path d="M1.56 8.27h23.85v3.11H1.56V8.27ZM3.11 17.59h22.3v3.1H3.11v-3.1Z"></path>
-                            <path d="M8.3 10.86h3.11v7.24H8.3v-7.24ZM16.59 10.86h3.11v7.24h-3.11v-7.24ZM8.3 20.17h3.11v7.24H8.3v-7.24ZM16.59 20.17h3.11v7.24h-3.11v-7.24Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h28v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Точный <br><strong>расчет плитки</strong></div>
-                  </div><div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 28" width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)">
-                            <path d="M5.32 28h19.36A5.52 5.52 0 0 0 30 22.3V5.7A5.52 5.52 0 0 0 24.68 0h-4.84v4.15h-9.68V0H5.32A5.52 5.52 0 0 0 0 5.7V22.3A5.52 5.52 0 0 0 5.32 28ZM22.74 7.26V3.11h1.94A2.51 2.51 0 0 1 27.1 5.7v11.51a5 5 0 0 0-2.42-.62h-1.94V7.26ZM2.9 5.7a2.51 2.51 0 0 1 2.42-2.59h1.94v13.48H5.32a5 5 0 0 0-2.42.62V5.7Zm2.42 14h4.84V7.26h9.68V19.7h4.84a2.6 2.6 0 0 1 0 5.19H5.32a2.6 2.6 0 0 1 0-5.19Z" fill="#C4C4C4"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v28H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content"><strong>Чертежи</strong> <br>для укладки</div>
-                  </div>
-                  <div class="card-advantages__item">
-                    <div class="card-advantages__icon">
-                      <svg viewBox="0 0 30 30" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)" fill="#C4C4C4">
-                            <path d="M15 0a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 27a12 12 0 1 0 0-24.001A12 12 0 0 0 15 27Z"></path>
-                            <path d="M20.25 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM9.75 15a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5ZM12.64 18.52a3.33 3.33 0 0 0 4.71 0l.59-.58 2.12 2.12-.56.58a6.331 6.331 0 0 1-9 0l-.59-.58 2.13-2.12.6.58Z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="a">
-                                <path fill="#fff" d="M0 0h30v30H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </div>
-                    <div class="card-advantages__content">Ориентация <br>на <strong>ваш бюджет</strong></div>
-                  </div>
-                </div>
             </div>
           </div>
-        </div>
-        <div class="card-anchors">
-          <div class="container">
-            <ul>
-              <li><a href="#anchor1">Элементы коллекции</a></li>
-              <li><a href="#anchor3">Популярные коллекции</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <br>
-          <h2 class="title" id="anchor3">Популярные коллекции</h2>
-          <div class="slider-catalog">
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog1.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+          <div class="row-products">
+            <div class="col-sidebar">
+              <div class="btn-open-sidebar"><i class="fas fa-filter"></i></div>
+              <div class="unit-sidebar">
+                <div class="unit-sidebar__head">
+                  <div class="unit-sidebar__title">Фильтр</div>
+                  <div class="unit-sidebar__close"><i class="fal fa-times"></i></div>
+                </div>
+                <div class="item-sidebar active">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                  <div class="item-sidebar__content" style="display: block;">
+                    <div class="range-catalog">
+                      <div class="range-controls">
+                        <div class="input-range">
+                          <span>от</span>
+                          <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                        </div>
+                        <div class="input-range">
+                          <span>до</span>
+                          <input type="text" maxlength="4" max="5000" value="5000" class="control-input control-input__to" />
+                        </div>
+                      </div>
+                      <input type="text" class="range-catalog__input" name="my_range" value="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar active">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                  <div class="item-sidebar__content" style="display: block;">
+                    <div class="range-catalog">
+                      <div class="range-controls">
+                        <div class="input-range">
+                          <span>от</span>
+                          <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                        </div>
+                        <div class="input-range">
+                          <span>до</span>
+                          <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                        </div>
+                      </div>
+                      <input type="text" class="range-catalog__input" name="my_range" value="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar active">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цена</div>
+                  <div class="item-sidebar__content" style="display: block;">
+                    <div class="range-catalog">
+                      <div class="range-controls">
+                        <div class="input-range">
+                          <span>от</span>
+                          <input type="text" maxlength="4" min="0" value="0" class="control-input control-input__from" />
+                        </div>
+                        <div class="input-range">
+                          <span>до</span>
+                          <input type="text" maxlength="4" max="16000" value="16000" class="control-input control-input__to" />
+                        </div>
+                      </div>
+                      <input type="text" class="range-catalog__input" name="my_range" value="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar active">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Область применения</div>
+                  <div class="item-sidebar__content" style="display: block;">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для коридора <strong>(11)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для кухни <strong>(46)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для пола <strong>(124)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Общественные помещения <strong>(6)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Строительная плитка <strong>(3)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Спецпредложения</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Цвет</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Производитель</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Страна производства</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Дизайн</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ширина</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Высота</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Поверхность</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Покрытие</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Морозостойкость</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Ректифицированная</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Материал</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-sidebar">
+                  <div class="item-sidebar__head"><i class="far fa-chevron-down"></i>Место в коллекции</div>
+                  <div class="item-sidebar__content">
+                    <div class="list-sidebar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для ванной <strong>(307)</strong></span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/>
+                          <span>Для гостиной <strong>(18)</strong></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tooltip-sidebar">
+                  <div class="tooltip-sidebar__title">Выбрано: 3</div>
+                  <a href="#" class="button">Показать</a>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog2.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
+            <div class="col-products">
+              <h2 class="title">Коллекции</h2>
+              <div class="sorting-catalog">
+                <strong>Сортировать по:</strong>
+                <a href="#" class="active">Цена</a>
+                <a href="#">Популярность</a>
+                <a href="#">Новинки</a>
+                <a href="#">По алфавиту</a>
+              </div>
+              <div class="row-catalog">
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog2.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog3.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-catalog">
+                  <div class="item-catalog item-catalog_collection">
+                    <a href="#" class="item-catalog__image">
+                      <img src="assets/img/catalog1.jpg" alt="alt">
+                    </a>
+                    <div class="item-catalog__content">
+                      <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog3.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Royal</strong></a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog4.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Bona</strong></a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog1.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="item-catalog item-catalog_collection">
-                <a href="#" class="item-catalog__image">
-                  <img src="assets/img/catalog2.jpg" alt="alt">
-                </a>
-                <div class="item-catalog__content">
-                  <div class="item-catalog__subtitle">Коллекция</div>
-                  <a href="#" class="item-catalog__title"><strong>Village</strong></a>
-                </div>
+              <div class="pagination">
+                <a href="#" class="pagination__item pagination__item_active">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item"><i class="far fa-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -729,7 +1125,7 @@
       </div>
       <div class="footer__divider"></div>
       <div class="container">
-        <a class="footer__logotype" href="">ТЕССЕР</a>
+        <a class="footer__logotype" href="">ТЕССЕР</a> 
         <div class="footer__copyright">
           © 2024 ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита, сантехники.
         </div>
@@ -780,24 +1176,6 @@
         </button>
       </div>
     </div>
-    
-
-    <div class="modal" data-modal-id="modal-analog">
-      <div class="modal__backdrop"></div>
-      <div class="modal-content">
-        <div class="modal-content__inner">
-
-        </div>
-        <button class="modal-content__close-button" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
 
     <div class="modal" data-modal-id="modal-calculation">
       <div class="modal__backdrop"></div>
@@ -815,6 +1193,6 @@
         </button>
       </div>
     </div>
-
+    
   </body>
 </html>
