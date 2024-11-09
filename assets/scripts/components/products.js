@@ -1,6 +1,23 @@
 
 $(document).ready(function() {
 
+
+	  // Обработчик клика по вкладкам
+	  $('.tabs-filter button').click(function(e) {
+		e.preventDefault();
+	
+		$('.tabs-filter li').removeClass('active');
+		$(this).parent().addClass('active');
+	
+		var tab = $(this).data('tab');
+	
+		if (tab === 'all') {
+			$('.col-catalog').fadeIn(200);
+		} else {
+			$('.col-catalog').fadeOut(0);
+			$('.col-catalog[data-product="' + tab + '"]').fadeIn(200);
+		}
+	});
 	const $listSidebar = $('.page-design-projects .list-sidebar');
 	const threshold = 5;
 
