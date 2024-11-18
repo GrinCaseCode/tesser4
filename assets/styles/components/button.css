@@ -1,4 +1,4 @@
-.button {
+body .button {
   display: block;
   padding: 0 30px;
   padding-block: 10px;
@@ -11,17 +11,19 @@
   background-color: var(--color-accent);
   transition: background-color 200ms ease-in-out;
 }
-.button:hover, .button:focus-visible {
+body .button:hover,
+body .button:focus-visible {
   background-color: color-mix(in srgb, var(--color-accent) 95%, black);
 }
-.button:active {
+body .button:active {
   background-color: color-mix(in srgb, var(--color-accent) 90%, black);
 }
-.button_outline {
+body .button_outline {
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
   background: transparent;
 }
-.button_outline:hover {
+body .button_outline:hover {
   color: #fff;
 }
+

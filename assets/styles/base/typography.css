@@ -68,28 +68,28 @@
   font-style: normal;
   font-display: swap;
 }
-
-h1 {
+h1.txt-style,
+.txt-style h1 {
   font-size: 30px;
   font-weight: 700;
 }
 
-h2 {
+.txt-style h2 {
   font-size: 26px;
   font-weight: 700;
 }
 
-h3 {
+.txt-style h3 {
   font-size: 24px;
   font-weight: 500;
 }
 
-h4 {
+.txt-style h4 {
   font-size: 21px;
   font-weight: 500;
 }
 
-h5 {
+.txt-style h5 {
   font-size: 17px;
   font-weight: 500;
 }

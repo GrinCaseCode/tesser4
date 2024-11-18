@@ -3,7 +3,7 @@
   column-gap: 5px;
   justify-content: center;
 }
-.pagination__item {
+body .pagination__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,8 +15,8 @@
   background-color: #fff;
   transition: all 0.3s;
 }
-.pagination__item:hover,
-.pagination__item_active {
+body .pagination__item:hover,
+body .pagination__item_active {
   color: #fff;
   border-color: var(--color-accent);
   background-color: var(--color-accent);

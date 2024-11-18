@@ -20,13 +20,14 @@
 	display: none;
 }
 .page-product h1 {
+  margin-top: 0;
   margin-bottom: 25px;
 } 
 .slider-for__item {
   height: 350px;
   cursor: url(../../assets/img/lense.png), zoom-in;
   display: block;
-  border: none;
+  border: none !important;
 }
 .slider-nav__item img,
 .slider-for__item img {
@@ -269,7 +270,7 @@
   padding-right: 30px;
   display: inline-flex;
 }
-.link-about-product {
+body .link-about-product {
   font-size: 22px;
   line-height: 30px;
   max-width: 500px;
@@ -333,7 +334,7 @@
   text-align: center;
   color: #fff;
 }
-.design-project__title {
+body .design-project__title {
   font-size: 36px;
   max-width: 1000px;
   line-height: 1.4;
@@ -458,7 +459,7 @@
     right: 15px;
     position: absolute;
   }
-  .design-project__title {
+  body .design-project__title {
     font-size: 27px;
     margin-bottom: 18px;
   }
@@ -504,7 +505,7 @@
   .tabs-product {
     gap: 40px;
   }
-  .link-about-product {
+  body .link-about-product {
     font-size: 18px;
     line-height: 26px;
     max-width: 336px;
@@ -517,7 +518,7 @@
     width: 160px;
     padding: 5px 14px;
   }
-  .design-project__title {
+  body .design-project__title {
     font-size: 24px;
     margin-bottom: 15px;
 }

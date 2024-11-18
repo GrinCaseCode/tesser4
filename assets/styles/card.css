@@ -16,7 +16,7 @@
   height: 540px;
   cursor: url(../../assets/img/lense.png), zoom-in;
   display: block;
-  border: none;
+  border: none !important;
 }
 .slider-card__item img {
 	width: 100%;
@@ -24,8 +24,9 @@
 	object-fit: cover;
   border-radius: 10px;
 }
-.title-card {
+body .title-card {
   font-size: 27px;
+  margin: 0;
   font-weight: 600;
 }
 .card-format {
@@ -88,7 +89,7 @@
   height: 112px;
   display: block;
   border-radius: 10px;
-  border: none;
+  border: none !important;
   position: relative;
 }
 .collection-projects__item img {
@@ -155,6 +156,7 @@
 .card-anchors ul {
   gap: 30px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -170,6 +172,7 @@
 .card-tabs ul {
   gap: 70px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -247,6 +250,9 @@
   font-size: 20px;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+.page-card .title {
+  margin: 0;
 }
 
 @media only screen and (max-width : 1200px) {
@@ -343,7 +349,7 @@
   .slider-card__item {
     height: 430px;
   }
-  .title-card {
+  body .title-card {
     font-size: 20px;
   }
   

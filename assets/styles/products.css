@@ -188,7 +188,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.unit-brand {
+body .unit-brand {
   padding: 15px 5px;
   gap: 10px;
   justify-content: flex-start;
@@ -210,7 +210,7 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.unit-brand:hover {
+body .unit-brand:hover {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
@@ -306,6 +306,7 @@
 }
 .tabs-filter {
   gap: 10px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;

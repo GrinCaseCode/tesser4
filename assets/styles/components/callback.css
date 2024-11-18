@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.callback__title {
+body .callback__title {
     font-size: 24px;
     max-width: 462px;
     font-weight: 400;
@@ -21,7 +21,7 @@
 .callback .button {
     padding: 13px 40px;
 }
-.callback__phone {
+body .callback__phone {
     font-size: 20px;
     border: none;
     color: initial;
@@ -34,7 +34,7 @@
     .callback .button {
         margin-top: 25px;
     }
-    .callback__title {
+    body .callback__title {
         font-size: 22px;
         max-width: 423px;
     }
@@ -48,7 +48,7 @@
       .callback .button {
         margin: 0;
       }
-      .callback__title {
+      body .callback__title {
         font-size: 20px;
         max-width: 288px;
       }

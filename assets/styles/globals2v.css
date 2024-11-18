@@ -1,0 +1,23 @@
+.txt-style * {
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+.txt-style *::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+
+
+.txt-style{
+  font-family: "Gotham Pro", sans-serif;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.main, .txt-style {
+  font-size: 14px;
+}
+.txt-style,
+.txt-style * {
+  box-sizing: border-box;
+}
+
+

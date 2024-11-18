@@ -36,10 +36,17 @@
 .hamburger-menu-search__wrapper {
   padding: 15px;
 }
-.hamburger-menu-search__control {
+body .hamburger-menu-search__control {
   flex-grow: 1;
+  padding: 0;
   padding-block: 5px;
   font-size: 14px;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
 }
 .hamburger-menu-search-button {
   width: 20px;
@@ -49,7 +56,7 @@
   width: 100%;
   height: 100%;
 }
-.hamburger-menu-catalog-button {
+body .hamburger-menu-catalog-button {
   padding: 10px 15px;
   width: 100%;
   display: flex;
@@ -89,7 +96,7 @@
 .hamburger-menu-catalog-menu_shown {
   visibility: visible;
 }
-.hamburger-menu-catalog-menu__close-button {
+body .hamburger-menu-catalog-menu__close-button {
   padding: 10px 15px;
   width: 100%;
   display: flex;

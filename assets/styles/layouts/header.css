@@ -65,6 +65,7 @@ header ul {
 .header-top-navigation-widgets-item__icon svg {
   width: 18px;
   height: 18px;
+  display: block;
 }
 .header-top-navigation-widgets-item__text {
   font-size: 12px;
@@ -115,7 +116,7 @@ header ul {
   font-size: 14px;
   font-weight: 700;
 }
-.header-region-select-button {
+body .header-region-select-button {
   display: flex;
   align-items: center;
   column-gap: 5px;
@@ -362,7 +363,7 @@ header ul {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 2fr;
 }
-.header-bottom-navigation-catalog-button {
+body .header-bottom-navigation-catalog-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,6 +488,7 @@ header ul {
 .header-catalog-sidebar {
   width: 100%;
   height: 100%;
+  margin: 0;
   background-color: #ececec;
 }
 .header-catalog-sidebar__item {
@@ -498,7 +500,7 @@ header ul {
   background-color: #ececec;
 }
 .header-catalog-sidebar__item:hover, .header-catalog-sidebar__item:focus-visible, .header-catalog-sidebar__item_active {
-  color: #fff;
+  color: #fff !important;
   background-color: var(--color-accent);
 }
 .header-catalog__body {
@@ -541,7 +543,7 @@ header ul {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
   background-color: var(--color-header-background);
 }
-.header-touch-hamburger-button {
+body .header-touch-hamburger-button {
   width: 60px;
   aspect-ratio: 1;
   display: flex;
@@ -620,6 +622,7 @@ header ul {
 .header-touch-widgets-item__icon svg {
   width: 18px;
   height: 18px;
+  display: block;
 }
 .header-touch-widgets-item__badge {
   position: absolute;
@@ -679,6 +682,16 @@ header ul {
   max-height: 70vh;
   overflow: auto;
   scrollbar-width: thin;
+}
+
+.search-main input {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 @media (min-width: 1280px) {

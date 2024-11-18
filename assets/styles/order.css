@@ -398,7 +398,7 @@
 .item-order__content {
   flex: 1;
 }
-.item-order__title {
+body .item-order__title {
   margin-bottom: 5px;
   display: inline-block;
   vertical-align: middle;

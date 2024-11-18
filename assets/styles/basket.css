@@ -38,7 +38,7 @@
 .fiter-basket .item-form input {
   height: 34px;
 }
-.clear-input {
+body .clear-input {
   width: 35px;
   height: 100%;
   color: #a1a1a1;
@@ -89,7 +89,7 @@
 .item-basket__feature span {
   color: #212529;
 }
-.item-basket__title {
+body .item-basket__title {
   font-size: 12px;
   margin-bottom: 12px;
   font-weight: 700;
@@ -98,7 +98,7 @@
   display: block;
   transition: all 0.3s;
 }
-.item-basket__title:hover {
+body .item-basket__title:hover {
   color: var(--color-accent);
 }
 .item-basket__content {
@@ -121,6 +121,10 @@
   color: #212529;
   opacity: 0.3;
   position: absolute;
+  cursor: pointer;
+}
+.item-basket__remove:hover {
+  opacity: 0.6;
 }
 .item-basket__prices {
   gap: 5px;

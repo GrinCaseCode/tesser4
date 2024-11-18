@@ -21,6 +21,9 @@
   color: inherit;
   border: none;
 }
+.item-catalog p {
+  margin: 0;
+}
 .item-catalog__image {
   height: 263px;
   display: block;
@@ -318,7 +321,7 @@
   flex-direction: column;
   align-items: center;
 }
-.link-product {
+body .link-product {
   gap: 6px;
   color: #80828c;
   display: inline-flex;

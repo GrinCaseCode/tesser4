@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+}
+
+.txt-style a {
+  color: var(--color-accent);
+  border-bottom: 1px var(--color-accent) solid;
+  text-decoration: inherit;
+}
+.txt-style a:hover {
+  border-color: transparent;
+}
+.txt-style a:focus {
+  outline: none;
+}
+
+.txt-style button {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.modal-content input {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+.txt-style li img {
+  float: left;
+}
+.txt-style img,
+.txt-style svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*reset.css*/
+
+/* 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--color-accent);
+  border-bottom: 1px var(--color-accent) solid;
+  text-decoration: inherit;
+}
+a:hover {
+  border-color: transparent;
+}
+a:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+input {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+p {
+  margin-block: 0;
+}
+
+ul,
+ol {
+  margin-block: 0;
+  padding-left: 0;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+table {
+  border-spacing: 0;
+}
+p img,
+li img {
+  float: left;
+}
+br,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  clear: both;
+}
+/**/
