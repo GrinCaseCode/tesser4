@@ -1,8 +1,9 @@
-.link {
+body .link {
   color: var(--color-link);
   border-bottom: 1px dashed var(--color-link);
   transition: border-color 150ms ease-in-out;
 }
-.link:hover, .link:focus-visible {
+body .link:hover, 
+body .link:focus-visible {
   border-color: transparent;
 }
