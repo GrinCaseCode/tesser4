@@ -4,11 +4,21 @@
 .slider-billbord__item {
   height: 530px;
   display: block;
+  position: relative;
 }
 .slider-billbord__item img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+.slider-billbord__item img.lazyload {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: initial !important;
+  position: absolute;
 }
 .slider-billbord .slick-dots {
   bottom: 20px;
@@ -27,13 +37,13 @@
   border-radius: 50%;
   margin: auto;
   padding: 0;
-  border: 1px solid #e9e8e6;
+  border: 1px solid var(--color-border-secondary);
 }
 .slider-billbord .slick-dots li button::before {
   display: none;
 }
 .slider-billbord .slick-dots li.slick-active button {
-  background: #e9e8e6;
+  background: var(--color-border-secondary);
 }
 .catalog {
   margin-top: 50px; 
@@ -49,13 +59,14 @@
   display: flex;
   align-items: center;
 }
-.tabs-main a {
+body .tabs-main a {
   color: initial;
   border: none;
+  transition: all 0.3s;
 }
-.tabs-main a:hover,
-.tabs-main .active a {
-  color: #f0a400;
+body .tabs-main a:hover,
+body .tabs-main .active a {
+  color: var(--color-accent);
 }
 .tab-pane-main {
   display: none;
@@ -66,16 +77,27 @@
 .banner-page {
   margin: 50px 0;
   display: block;
+  position: relative;
+  border: none !important;  
 }
 .banner-page img {
   width: 100%;
   height: auto;
   display: block;
 }
+.banner-page img.lazyload {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: initial !important;
+  position: absolute;
+}
 .about {
   padding: 50px 0;
   margin-top: 50px;
-  background: #fff;
+  background: var(--color-header-background);
 }
 .about__wrapper {
   margin: 0 -10px;
@@ -123,7 +145,7 @@
 .item-advantage__value {
   font-size: 30px;
   font-weight: bold;
-  color: #f0a400;
+  color: var(--color-accent);
 }
 .about p,
 .item-advantage p {
@@ -180,10 +202,10 @@
     bottom: 0;
   }
   .slider-billbord .slick-dots li button {
-    border-color: #aaa;
+    border-color: var(--color-border-secondary);
   }
   .slider-billbord .slick-dots li.slick-active button {
-    background: #aaa;
+    background: var(--color-border-secondary);
   }
 }
 @media (max-width: 768px) {

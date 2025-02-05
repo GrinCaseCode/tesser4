@@ -37,13 +37,29 @@ body{
   outline: none;
   background: none;
 }
-.txt-style li img {
-  float: left;
-}
 .txt-style img,
 .txt-style svg {
-  display: block;
   max-width: 100%;
+}
+.txt-style table {
+  border: none;
+}
+.txt-style table th,
+.txt-style table td {
+  padding: 5px;
+  border: none;
+  border-right: 1px var(--color-text-primary) solid;
+  border-bottom: 1px var(--color-text-primary) solid;
+}
+.txt-style table th {
+  border-top: 1px var(--color-text-primary) solid;
+}
+.txt-style table th:first-child,
+.txt-style table td:first-child {
+  border-left: 1px var(--color-text-primary) solid;
+}
+.txt-style table {
+  border-spacing: 0;
 }
 
 /*reset.css*/

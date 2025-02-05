@@ -4,7 +4,7 @@
 .item-form input {
   padding: 10px 15px;
   width: 100%;
-  color: #808080;
+  color: var(--color-text-secondary);
   font: inherit;
   outline: none;
   border: 1px solid var(--color-border-primary);
@@ -26,7 +26,7 @@
   top: 100% !important;
   left: 0;
   bottom: auto !important;
-  background: #fff;
+  background: var(--color-header-background);
   width: 100% !important;
   padding: 0;
   border: 1px solid var(--color-border-primary);
@@ -40,7 +40,7 @@
 	height: 19px;
 	font-size: 12px;
 	right: 15px;
-	color: #333;
+	color: var(--color-text-primary);
 	top: 0;
 	bottom: 0;
 	margin: auto;
@@ -67,13 +67,13 @@
 }
 .item-form label {
   padding-bottom: 7px;
-  color: #000;
+  color: var(--color-text-primary);
   font-weight: 400;
   display: block;
   font-size: 14px;
 }
 .item-form label span {
-  color: #d93333;
+  color: var(--color-label);
 }
 .item-form textarea {
   height: 70px;

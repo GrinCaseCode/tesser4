@@ -3,7 +3,7 @@
   column-gap: 5px;
   justify-content: center;
 }
-body .pagination__item {
+body .container .pagination__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,12 +12,12 @@ body .pagination__item {
   height: 30px;
   border-radius: 100%;
   border: 1px solid var(--color-border-primary);
-  background-color: #fff;
+  background-color: var(--color-header-background);
   transition: all 0.3s;
 }
-body .pagination__item:hover,
-body .pagination__item_active {
-  color: #fff;
+body .container .pagination__item:hover,
+body .container .pagination__item_active {
+  color: var(--color-header-background);
   border-color: var(--color-accent);
   background-color: var(--color-accent);
   pointer-events: none;

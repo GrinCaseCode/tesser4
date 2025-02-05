@@ -49,6 +49,18 @@
   height: 25px;
   object-fit: scale-down;
 }
+.footer-socials-item svg,
+.footer-socials-item img {
+  width: 25px;
+  height: 25px;
+}
+.footer-socials-item:hover {
+  opacity: 0.7;
+}
+.footer-socials-item {
+  transition: all 0.3s;
+}
+
 
 @media (max-width: 1279px) {
   .footer {

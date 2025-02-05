@@ -1,10 +1,15 @@
 :root {
+  --color-accent: #003399;
   --color-text-primary: #212529;
   --color-text-secondary: #5f5f5f;
-  --color-accent: #f0a400;
   --color-background: #fcfcfc;
   --color-border-primary: #e5e5e5;
   --color-border-secondary: #dbdbdb;
   --color-header-background: #fff;
   --color-link: #105fb7;
+  --color-label: #c33c18;
+  --color-hit: #f08800;
+  --color-gift: #f42c2c;
+  --color-light-text: #8d8d8d;
+  --color-sale-text: #71ba24;
 }

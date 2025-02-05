@@ -7,16 +7,16 @@ body .button {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
-  color: #fff;
+  color: var(--color-header-background);
   background-color: var(--color-accent);
   transition: background-color 200ms ease-in-out;
 }
 body .button:hover,
 body .button:focus-visible {
-  background-color: color-mix(in srgb, var(--color-accent) 95%, black);
+  background-color: color-mix(in srgb, var(--color-accent) 65%, var(--color-text-primary));
 }
 body .button:active {
-  background-color: color-mix(in srgb, var(--color-accent) 90%, black);
+  background-color: color-mix(in srgb, var(--color-accent) 60%, var(--color-text-primary));
 }
 body .button_outline {
   border: 1px solid var(--color-accent);
@@ -24,6 +24,6 @@ body .button_outline {
   background: transparent;
 }
 body .button_outline:hover {
-  color: #fff;
+  color: var(--color-header-background);
 }
 

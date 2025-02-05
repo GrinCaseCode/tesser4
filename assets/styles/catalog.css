@@ -14,7 +14,7 @@
   align-items: flex-start;
   width: 25%;
 }
-.list-catalog > li > a {
+body .list-catalog > li > a {
   font-size: 16px;
   margin: 7px 0;
   color: var(--color-accent);
@@ -22,17 +22,17 @@
   display: inline-block;
   vertical-align: middle;
 }
-.list-catalog a { 
+body .list-catalog a { 
   transition: all 0.3s;
   color: initial;
   border-bottom: 1px transparent solid;
 }
-.list-catalog a:hover {
+body .list-catalog a:hover {
   border-color: inherit;
 }
 .list-catalog a span {
   font-size: 12px;
-  color: #aaa;
+  color: var(--color-text-secondary);
 }
 .list-catalog li ul {
   padding-left: 0;

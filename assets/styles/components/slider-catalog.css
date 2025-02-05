@@ -1,6 +1,8 @@
 .slider-catalog-main,
 .slider-catalog {
   padding-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 .slider-catalog-main:not(.slick-initialized) > *:not(:first-child),
 .slider-catalog:not(.slick-initialized) > *:not(:first-child) {
@@ -32,7 +34,7 @@
   transform: none;
   font-size: 24px !important;
   position: absolute;
-  color: #4e4e4e;
+  color: var(--color-text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
