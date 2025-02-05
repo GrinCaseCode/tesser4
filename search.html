@@ -7,38 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TESSER</title>
 
-    <link rel="stylesheet" href="assets/styles/about-company.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/product.css?ver=1.21" />
+    
     <link rel="stylesheet" href="assets/styles/base/typography.css?ver=1.21" />
-    <link rel="stylesheet" href="assets/styles/base/colors.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/base/reset_2v.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/base/colors.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/globals2v.css?ver=1.21" />
 
     <link rel="stylesheet" href="assets/styles/layouts/container.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/layouts/header.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/layouts/footer.css?ver=1.21" />
     <link rel="stylesheet" href="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/scripts/lib/slick-1.5.9/slick/slick-theme.css?ver=1.21" />
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.12.0-web/css/all.min.css?ver=1.21" />
 
     <link rel="stylesheet" href="assets/styles/components/breadcrumbs.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/components/link.css?ver=1.21" />
-    <link rel="stylesheet" href="assets/styles/components/text-block.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/components/modal.css?ver=1.21" />
-    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/components/hamburger-menu.css?ver=1.21" /> 
     <link rel="stylesheet" href="assets/styles/components/button.css?ver=1.21" />
     <link rel="stylesheet" href="assets/styles/components/input.css?ver=1.21" />
-
+    <link rel="stylesheet" href="assets/styles/components/quantity.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/components/product-card.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/card.css?ver=1.21" />
+    <link rel="stylesheet" href="assets/styles/search.css?ver=1.21" />
 
     <script src="assets/scripts/lib/jquery/jquery-3.6.0.min.js?ver=1.21"></script>
     <script src="assets/scripts/lib/fancybox-master/dist/jquery.fancybox.min.js?ver=1.21"></script>
     <script src="assets/scripts/components/fancybox.js?ver=1.21"></script>
     <script src="assets/scripts/lib/mask/jquery.maskedinput.js?ver=1.21"></script>
+    <script src="assets/scripts/lib/slick-1.5.9/slick/slick.min.js?ver=1.21"></script>
     <script src="assets/scripts/components/hamburger-menu.js?ver=1.21"></script>
     <script src="assets/scripts/components/header.js?ver=1.21"></script>
     <script src="assets/scripts/components/modal.js?ver=1.21"></script>
+    <script src="assets/scripts/components/product.js?ver=1.21"></script>
+    <script src="assets/scripts/components/product-card.js?ver=1.21"></script>
+    <script src="assets/scripts/components/card.js?ver=1.21"></script>
     <script src="assets/scripts/components/lazyload.js?ver=1.21"></script>
   </head>
   <body>
-    
     <header class="header txt-style">
       <div class="container">
         <div class="header-top-navigation">
@@ -498,52 +506,490 @@
     <section class="breadcrumbs container txt-style">
       <a class="breadcrumbs__item" href="">Главная</a>
       <span class="breadcrumbs__separator">/</span>
-      <span class="breadcrumbs__item">О компании</span>
+      <a class="breadcrumbs__item" href="">Каталог</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__item"> Результат поиска</span>
     </section>
-    <h1 class="container txt-style">О компании</h1>
+
     <main class="main txt-style">
-      <section class="about-company container">
-        <p class="about-company__description">
-          ТЕССЕР — сеть розничных салонов продаж керамической плитки, керамогранита и сантехники с комплексным подходом
-          к обслуживанию. Мы предлагаем полный комплекс услуг от разработки дизайн-проекта и подбора отделочных решений
-          до поставки материалов. В салонах представлен широкий выбор керамогранита, керамической плитки, мозаики,
-          напольных покрытий, сантехники, мебели для ванных комнат и сопутствующих товаров.
-        </p>
-        <p class="about-company__text-block text-block">
-          Почему ТЕССЕР?
-          <br />
-          Бесплатная услуга «3D дизайн-проект за час» Точный расчет количества необходимых материалов «до одной плитки»
-        </p>
-        <div class="about-company-gallery">
-          <img class="about-company-gallery__item lazyload" data-src="https://placehold.co/600x400/EEE/31343C" src="assets/img/loading.svg" alt="alt" loading="lazy">
-          <img class="about-company-gallery__item lazyload" data-src="https://placehold.co/600x400/EEE/31343C" src="assets/img/loading.svg" alt="alt" loading="lazy">
-          <img class="about-company-gallery__item lazyload" data-src="https://placehold.co/600x400/EEE/31343C" src="assets/img/loading.svg" alt="alt" loading="lazy">
-          <img class="about-company-gallery__item lazyload" data-src="https://placehold.co/600x400/EEE/31343C" src="assets/img/loading.svg" alt="alt" loading="lazy">
-        </div>
-        <div class="about-company-services">
-          <div class="about-company-services__title">На нашем сайте к вашим услугам:</div>
-          <div class="about-company-services__item">реальные и конкурентоспособные цены;</div>
-          <div class="about-company-services__item">широчайший ассортимент товаров;</div>
-          <div class="about-company-services__item">качественные описания и изображения товаров;</div>
-          <div class="about-company-services__item">поиск товаров в магазине;</div>
-          <div class="about-company-services__item">система обратной связи;</div>
-          <div class="about-company-services__item">
-            продажа только сертифицированных и имеющих легальное происхождение товаров;
+      <section class="page-search">
+        <div class="container">
+          <h1>Результат поиска</h1>
+          <div class="search-page">
+            <form>
+              <div class="item-form">
+                <input type="text" value="ламинат">
+              </div>
+              <button class="search-page__btn"></button>
+            </form>
           </div>
-          <div class="about-company-services__item">покупка товара, не выходя из дома или офиса;</div>
-          <div class="about-company-services__item">
-            быстрое согласование товара с клиентом для подтверждения заказа;
+          <div class="card-tabs">
+            <div class="tabs-wrap">
+              <div class="btn-tab"></div>
+              <ul class="tabs">
+                <li class="active"><button data-tab="type-1">Ламинат</button></li>
+                <li><button data-tab="type-2">Паркетная доска</button></li>
+                <li><button data-tab="type-3">Плинтус</button></li>
+                <li><button data-tab="type-4">Подложка под паркет и ламинат</button></li>
+              </ul>
+            </div>
           </div>
-          <div class="about-company-services__item">обмен товаров ненадлежащего качества и многое другое.</div>
+          <div class="row-catalog">
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                  <div class="item-label item-label_hit">Хит</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                  <div class="item-label item-label_new">Новинка</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog2.jpg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog3.png" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog4.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog3.png" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog4.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                  <div class="item-label item-label_hit">Хит</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog1.jpeg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog" id="product8">
+                <div class="labels-wrap">
+                  <div class="item-label item-label_sale">-20%</div>
+                  <div class="item-label item-label_new">Новинка</div>
+                </div>
+                <div class="item-catalog__brand">
+                  <img src="assets/img/brand_catalog2.jpg" alt="alt">
+                </div>
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title">Ламинат Kronotex Dynamic Бук Королевский D 1407</a>
+                  <div class="item-catalog__features">
+                    <p>Страна: <strong>Германия</strong></p>
+                    <p>Производитель: <strong>Kronotex</strong></p>
+                    <p>Класс: <strong>33</strong></p>
+                    <p>Толщина, мм: <strong>10</strong></p>
+                  </div>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                    <div class="price-old">1 170 ₽/шт</div>
+                  </div>
+                </div>
+                <div class="item-catalog__info">
+                    <button class="button" data-modal-id="modal-calculation" data-modal-url="assets/modals/modal-calculation.html">Рассчитать стоимость</button>
+                    <a href="#" class="link-card link-card_favorite"><i class="fal fa-heart"></i><span>В избранное</span></a>
+                    <a href="#" class="link-card link-card_compare"><i class="icon-compare"><i></i><i></i><i></i></i><span>Сравнить</span></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title">Коллекции</h2>
+          <div class="row-catalog">
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-4">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-4">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" src="assets/img/loading.svg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <div class="item-catalog__subtitle">Коллекция</div>
+                  <a href="#" class="item-catalog__title"><strong>Agat</strong></a>
+                  <div class="item-catalog__prices">
+                    <div class="price-main">936 ₽/шт</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title">Дизайн-проекты</h2>
+          <div class="row-catalog">
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-4">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog3.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Envy</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-3">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-2">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog1.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Marmo</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-catalog" data-product="type-1">
+              <div class="item-catalog item-catalog_collection">
+                <a href="#" class="item-catalog__image">
+                  <img data-src="assets/img/catalog2.jpg" class="lazyload" alt="alt" loading="lazy">
+                </a>
+                <div class="item-catalog__content">
+                  <a href="#" class="item-catalog__title"><strong>Alcor</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2 class="about-company__subtitle">Мы рады приветствовать вас на сайте нашей компании!</h2>
-        <p class="about-company__text-block text-block text-block_gray">
-          Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания,
-          касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
-          <a href="mailto:info@tesser.ru">info@tesser.ru</a>
-        </p>
       </section>
     </main>
+    
     <footer class="footer txt-style">
       <div class="container">
         <div class="footer-column">
@@ -668,5 +1114,22 @@
       </div>
     </div>
 
+    <div class="modal txt-style" data-modal-id="modal-calculation">
+      <div class="modal__backdrop"></div>
+      <div class="modal-content modal-content_calculation">
+        <div class="modal-content__inner">
+
+        </div>
+        <button class="modal-content__close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
   </body>
 </html>
