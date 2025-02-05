@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.slider-for').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		touchThreshold: 1000,
     asNavFor: '.slider-nav',
 		slidesToShow: 1,
@@ -17,7 +17,7 @@ $(document).ready(function() {
   $('.slider-nav').slick({
 		arrows: true,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		touchThreshold: 1000,
     asNavFor: '.slider-for',
     focusOnSelect: true,

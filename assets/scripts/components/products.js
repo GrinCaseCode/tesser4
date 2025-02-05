@@ -98,6 +98,22 @@ $(document).ready(function() {
     var tabProd = $(this).data('value-product');
     $('.tab-products').fadeOut(0);
     $('.tab-products[data-tab-product="' + tabProd + '"]').fadeIn(200);
+	$(this).addClass("active");
+	$(this).siblings().removeClass("active");
+});
+
+
+$('.btn-sort').click(function(e) {
+    e.preventDefault();
+	$(this).addClass("active");
+	$(this).siblings().removeClass("active");
+	if ($(this).hasClass("btn-sort_down")) {
+		$(this).removeClass("btn-sort_down");
+		$(this).addClass("btn-sort_up");
+	} else {
+		$(this).addClass("btn-sort_down");
+		$(this).removeClass("btn-sort_up");
+	}
 });
 
 $('.item-sidebar input').on('change', function() {

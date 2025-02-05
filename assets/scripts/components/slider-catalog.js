@@ -55,31 +55,33 @@ $(document).ready(function() {
 			});
 
 
-					// Функция для автоскроллинга
-	function startAutoScroll(slider, direction) {
-		return setInterval(function() {
-			if (direction === 'prev') {
-				slider.slick('slickPrev');
-			} else {
-				slider.slick('slickNext');
-			}
-		}, 20); // Интервал в 300 мс
-	}
+// Функция для автоскроллинга
+function startAutoScroll(slider, direction) {
+    return setInterval(function() {
+        if (direction === 'prev') {
+            slider.slick('slickPrev');
+        } else {
+            slider.slick('slickNext');
+        }
+    }, 20); // Интервал в 20 мс
+}
 
-	let autoScrollInterval;
+let autoScrollInterval;
 
-	// Обработчик для кнопки "prev"
-	$('.slick-prev').on('mousedown', function() {
-		autoScrollInterval = startAutoScroll($('.slick-slider'), 'prev');
-	}).on('mouseup mouseleave', function() {
-		clearInterval(autoScrollInterval);
-	});
+// Обработчик для кнопки "prev"
+$(document).on('mousedown', '.slick-prev', function() {
+    let slider = $(this).parent('.slick-slider');
+    autoScrollInterval = startAutoScroll(slider, 'prev');
+}).on('mouseup mouseleave', function() {
+    clearInterval(autoScrollInterval);
+});
 
-	// Обработчик для кнопки "next"
-	$('.slick-next').on('mousedown', function() {
-		autoScrollInterval = startAutoScroll($('.slick-slider'), 'next');
-	}).on('mouseup mouseleave', function() {
-		clearInterval(autoScrollInterval);
-	});
+// Обработчик для кнопки "next"
+$(document).on('mousedown', '.slick-next', function() {
+    let slider = $(this).parent('.slick-slider');
+    autoScrollInterval = startAutoScroll(slider, 'next');
+}).on('mouseup mouseleave', function() {
+    clearInterval(autoScrollInterval);
+});
 
 });

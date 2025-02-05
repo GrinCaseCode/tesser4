@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const showModal = modal => {
-    document.body.style.overflow = 'hidden';
+
 
     modal.classList.toggle('modal_shown', true);
     const modalContent = modal.querySelector('.modal-content');

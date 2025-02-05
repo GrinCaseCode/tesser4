@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.slider-card').slick({
 		arrows: true,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		touchThreshold: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,

@@ -27,3 +27,38 @@ $(document).ready(function() {
   });
 
 });
+
+
+// Отложеная загрузка 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyLoad = (entry) => {
+      const img = entry.target;
+      const sources = img.parentNode.querySelectorAll('source');
+
+      // Set the srcset for sources
+      sources.forEach(source => {
+          source.srcset = source.getAttribute('data-srcset');
+      });
+
+      // Set the src for img
+      img.src = img.getAttribute('data-src');
+
+      img.onload = () => {
+          img.removeAttribute('data-src');
+          sources.forEach(source => source.removeAttribute('data-srcset'));
+      };
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              lazyLoad(entry);
+              observer.unobserve(entry.target);
+          }
+      });
+  });
+
+  const images = document.querySelectorAll('.slider-billbord img[data-src]');
+  images.forEach(image => observer.observe(image));
+});
